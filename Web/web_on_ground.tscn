@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr2sgqe3xtott"]
+
+[ext_resource type="Script" path="res://Web/web_on_ground.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://dfhksnbfe7m57" path="res://Assets/icon.svg" id="1_fvgkd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5bk5m"]
+
+[node name="web-on-ground" type="Area2D" unique_id=2008654719]
+script = ExtResource("1_script")
+scale = Vector2(2.5, 2.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1102905078]
+shape = SubResource("RectangleShape2D_5bk5m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=957454653]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_fvgkd")

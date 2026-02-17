@@ -1,12 +1,13 @@
 extends CharacterBody2D
 
-@export var speed = 300.0
+@export var speed = 200.0
 @export var jump_velocity = -450.0
 @export var wall_slide_speed = 150.0
 @export var wall_jump_force = 400.0
 @export var dash_speed = 1200.0
 @export var dash_duration = 0.15
 @export var dash_cooldown = 3.0
+@export var jump_cooldown = 1.0
 
 @export_group("Dash UI")
 @export var indicator_anchor: Control.LayoutPreset = Control.PRESET_BOTTOM_RIGHT
@@ -19,10 +20,19 @@ var facing_direction = 1.0
 var is_dashing = false
 var dash_timer = 0.0
 var dash_cooldown_timer = 0.0
+var jump_cooldown_timer = 0.0
+var web_count = 0
+@export var web_slowdown_factor = 0.4
 
 @onready var dash_indicator = $CanvasLayer/DashIndicator
+var recharge_sound: AudioStreamPlayer
 
 func _ready():
+	recharge_sound = AudioStreamPlayer.new()
+	recharge_sound.stream = load("res://bam1.mp3")
+	add_child(recharge_sound)
+	
+	add_to_group("player")
 	if not has_node("CanvasLayer"):
 		var cl = CanvasLayer.new()
 		add_child(cl)
@@ -43,10 +53,23 @@ func _ready():
 		dash_indicator = progress
 
 func _physics_process(delta):
+	if is_on_wall_only():
+		if $AnimatedSprite2D.flip_h:
+			$AnimatedSprite2D.rotation_degrees = -90
+		else:
+			$AnimatedSprite2D.rotation_degrees = 90
+	else:
+		$AnimatedSprite2D.rotation_degrees = 0
+
 	if dash_cooldown_timer > 0:
 		dash_cooldown_timer -= delta
+		if dash_cooldown_timer <= 0:
+			recharge_sound.play()
 		if dash_indicator:
 			dash_indicator.value = dash_cooldown - dash_cooldown_timer
+	
+	if jump_cooldown_timer > 0:
+		jump_cooldown_timer -= delta
 	if is_dashing:
 		dash_timer -= delta
 		if dash_timer <= 0:
@@ -63,20 +86,29 @@ func _physics_process(delta):
 
 	var jump_attempt = Input.is_action_just_pressed("ui_accept") or Input.is_action_just_pressed("ui_up")
 
-	if jump_attempt:
+	if jump_attempt and jump_cooldown_timer <= 0:
 		if is_on_floor():
 			velocity.y = jump_velocity
+			jump_cooldown_timer = jump_cooldown
 		elif is_on_wall_only():
 			velocity.y = jump_velocity
 			velocity.x = get_wall_normal().x * wall_jump_force
+			jump_cooldown_timer = jump_cooldown
 
 	var direction = Input.get_axis("move_left", "move_right")
 	
+	var current_speed = speed
+	if web_count > 0:
+		current_speed *= web_slowdown_factor
+	
 	if direction:
-		velocity.x = direction * speed
+		velocity.x = direction * current_speed
 		facing_direction = sign(direction)
+		$AnimatedSprite2D.flip_h = facing_direction > 0
+		$AnimatedSprite2D.play("default")
 	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
+		velocity.x = move_toward(velocity.x, 0, current_speed)
+		$AnimatedSprite2D.stop()
 
 	if Input.is_action_just_pressed("dash") and dash_cooldown_timer <= 0:
 		start_dash()
@@ -91,3 +123,9 @@ func start_dash():
 	velocity.y = 0
 	if dash_indicator:
 		dash_indicator.value = 0
+
+func enter_web():
+	web_count += 1
+
+func exit_web():
+	web_count = max(0, web_count - 1)

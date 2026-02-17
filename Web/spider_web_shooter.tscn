@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxaao148m4pbp"]
+
+[ext_resource type="Script" path="res://Web/SpiderWebShooter.gd" id="1_script"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q4nk3"]
+
+[node name="SpiderWebShooter" type="Area2D" unique_id=84399885]
+script = ExtResource("1_script")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1164219876]
+shape = SubResource("RectangleShape2D_q4nk3")

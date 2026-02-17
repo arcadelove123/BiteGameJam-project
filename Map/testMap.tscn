@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://ce38xs563mp5g" path="res://Assets/testTileset.png" id="1_r057v"]
 [ext_resource type="PackedScene" uid="uid://bbgsjhur6fokm" path="res://MainCharacter/main_character.tscn" id="2_oemjb"]
+[ext_resource type="PackedScene" uid="uid://c8swoyikilgdo" path="res://Web/WebSpawner.tscn" id="3_ayjuu"]
+[ext_resource type="PackedScene" uid="uid://dxaao148m4pbp" path="res://Web/spider_web_shooter.tscn" id="4_65cun"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oemjb"]
 texture = ExtResource("1_r057v")
@@ -152,3 +154,24 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Main-character" parent="." unique_id=1231940662 instance=ExtResource("2_oemjb")]
+
+[node name="SpiderWebShooter" parent="." unique_id=84399885 node_paths=PackedStringArray("spawners") instance=ExtResource("4_65cun")]
+position = Vector2(515, 611)
+spawners = [NodePath("../WebSpawner")]
+
+[node name="SpiderWebShooter2" parent="." unique_id=161974931 node_paths=PackedStringArray("spawners") instance=ExtResource("4_65cun")]
+position = Vector2(678, 511)
+spawners = [NodePath("../WebSpawner2")]
+
+[node name="WebSpawner2" parent="." unique_id=1580804308 node_paths=PackedStringArray("target_node") instance=ExtResource("3_ayjuu")]
+target_node = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="WebSpawner2" unique_id=1739356054]
+position = Vector2(881, 583)
+
+[node name="WebSpawner" parent="." unique_id=610084036 node_paths=PackedStringArray("target_node") instance=ExtResource("3_ayjuu")]
+position = Vector2(207, 272)
+target_node = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="WebSpawner" unique_id=1777069533]
+position = Vector2(590, 329)
