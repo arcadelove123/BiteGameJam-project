@@ -3,7 +3,6 @@ extends Area2D
 func _ready():
 	body_entered.connect(_on_body_entered)
 	body_exited.connect(_on_body_exited)
-	# Add to web group just in case
 	add_to_group("web")
 
 func _on_body_entered(body):

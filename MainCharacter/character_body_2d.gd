@@ -23,8 +23,13 @@ var web_count = 0
 @export var web_slowdown_factor = 0.4
 
 @onready var dash_indicator = $CanvasLayer/DashIndicator
+var recharge_sound: AudioStreamPlayer
 
 func _ready():
+	recharge_sound = AudioStreamPlayer.new()
+	recharge_sound.stream = load("res://bam1.mp3")
+	add_child(recharge_sound)
+	
 	add_to_group("player")
 	if not has_node("CanvasLayer"):
 		var cl = CanvasLayer.new()
@@ -48,6 +53,8 @@ func _ready():
 func _physics_process(delta):
 	if dash_cooldown_timer > 0:
 		dash_cooldown_timer -= delta
+		if dash_cooldown_timer <= 0:
+			recharge_sound.play()
 		if dash_indicator:
 			dash_indicator.value = dash_cooldown - dash_cooldown_timer
 	if is_dashing:
