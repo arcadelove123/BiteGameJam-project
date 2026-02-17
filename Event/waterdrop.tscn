@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://cq3ac747ytvrq"]
+
+[ext_resource type="Script" uid="uid://bcpl1e72l31mc" path="res://Event/waterdrop.gd" id="1_1x5bd"]
+[ext_resource type="Texture2D" uid="uid://dfhksnbfe7m57" path="res://Assets/icon.svg" id="2_khrh1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pbav8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_khrh1")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_khrh1")
+}],
+"loop": true,
+"name": &"droppped",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2a32a"]
+
+[node name="Waterdrop" type="Area2D" unique_id=155347294]
+script = ExtResource("1_1x5bd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1232743537]
+position = Vector2(-0.4999981, 0.5)
+scale = Vector2(0.2265625, 0.1484375)
+sprite_frames = SubResource("SpriteFrames_pbav8")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=212432720]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_2a32a")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
