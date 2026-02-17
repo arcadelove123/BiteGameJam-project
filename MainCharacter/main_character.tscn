@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cv5cr3lui00n2" path="res://MainCharacter/character_body_2d.gd" id="1_wmkwl"]
 [ext_resource type="Texture2D" uid="uid://dfhksnbfe7m57" path="res://Assets/icon.svg" id="2_uvl38"]
 [ext_resource type="PackedScene" uid="uid://cd07w0q8y2oki" path="res://MainCharacter/health_system.tscn" id="3_bykjv"]
+[ext_resource type="PackedScene" uid="uid://yktnq7nb23dn" path="res://MainCharacter/game_over.tscn" id="4_yymgt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2q423"]
 
@@ -28,4 +29,8 @@ sprite_frames = SubResource("SpriteFrames_8yqgs")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=647003749]
 
-[node name="HealthSystem" parent="." unique_id=1772652342 instance=ExtResource("3_bykjv")]
+[node name="CanvasGroup" type="CanvasGroup" parent="." unique_id=734372684]
+
+[node name="HealthSystem" parent="CanvasGroup" unique_id=1772652342 instance=ExtResource("3_bykjv")]
+
+[node name="GameOver" parent="CanvasGroup" unique_id=1627354154 instance=ExtResource("4_yymgt")]

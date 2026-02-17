@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://c7p1cy8um2fxc"]
+
+[ext_resource type="Script" uid="uid://cqecssxgwap4w" path="res://Scenes/ending.gd" id="1_sbbak"]
+
+[node name="Ending" type="Control" unique_id=216797553]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_sbbak")
+
+[node name="Button" type="Button" parent="." unique_id=1668033963]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 292.0
+offset_top = 410.0
+offset_right = 843.0
+offset_bottom = 487.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Go Back to Main Menu"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1674251285]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="." unique_id=157605134]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 430.0
+offset_top = 225.0
+offset_right = 693.0
+offset_bottom = 335.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 80
+text = "Ending"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://yktnq7nb23dn"]
+
+[ext_resource type="Script" uid="uid://xkjgi0wco8ij" path="res://MainCharacter/game_over.gd" id="1_rftea"]
+[ext_resource type="Texture2D" uid="uid://d3o2tdolip7bj" path="res://Assets/wasted (1).png" id="2_ootcb"]
+[ext_resource type="Texture2D" uid="uid://dyvvctcc7w0d0" path="res://Assets/retry.png" id="3_8sere"]
+
+[node name="GameOver" type="CanvasLayer" unique_id=1627354154]
+script = ExtResource("1_rftea")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=452327868]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.40784314)
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1854245190]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -161.0
+offset_top = -161.0
+offset_right = -121.0
+offset_bottom = -121.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(8, 8)
+texture = ExtResource("2_ootcb")
+
+[node name="Button" type="Button" parent="." unique_id=1671873743]
+texture_filter = 1
+offset_left = 1006.0
+offset_top = 32.0
+offset_right = 1129.0
+offset_bottom = 72.0
+theme_override_constants/h_separation = 4
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="Button" unique_id=563406705]
+layout_mode = 0
+offset_left = -21.0
+offset_top = -58.0
+offset_right = 144.0
+offset_bottom = 95.0
+texture = ExtResource("3_8sere")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
