@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 300.0
+@export var speed = 200.0
 @export var jump_velocity = -450.0
 @export var wall_slide_speed = 150.0
 @export var wall_jump_force = 400.0
@@ -51,6 +51,14 @@ func _ready():
 		dash_indicator = progress
 
 func _physics_process(delta):
+	if is_on_wall_only():
+		if $AnimatedSprite2D.flip_h:
+			$AnimatedSprite2D.rotation_degrees = -90
+		else:
+			$AnimatedSprite2D.rotation_degrees = 90
+	else:
+		$AnimatedSprite2D.rotation_degrees = 0
+
 	if dash_cooldown_timer > 0:
 		dash_cooldown_timer -= delta
 		if dash_cooldown_timer <= 0:
@@ -89,8 +97,11 @@ func _physics_process(delta):
 	if direction:
 		velocity.x = direction * current_speed
 		facing_direction = sign(direction)
+		$AnimatedSprite2D.flip_h = facing_direction > 0
+		$AnimatedSprite2D.play("default")
 	else:
 		velocity.x = move_toward(velocity.x, 0, current_speed)
+		$AnimatedSprite2D.stop()
 
 	if Input.is_action_just_pressed("dash") and dash_cooldown_timer <= 0:
 		start_dash()
