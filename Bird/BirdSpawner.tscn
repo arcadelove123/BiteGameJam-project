@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bird_spawner_scene_uid"]
+
+[ext_resource type="Script" path="res://Bird/BirdSpawner.gd" id="1_bird_spawner_script"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_detection"]
+radius = 60.0
+
+[node name="BirdSpawner" type="Node2D"]
+script = ExtResource("1_bird_spawner_script")
+target_node = NodePath("Target")
+
+[node name="Target" type="Marker2D" parent="."]
+position = Vector2(200, 0)
+
+[node name="DetectionArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+shape = SubResource("CircleShape2D_detection")

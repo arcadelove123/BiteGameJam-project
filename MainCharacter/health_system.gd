@@ -3,7 +3,7 @@ extends CanvasLayer
 var heart_list: Array[TextureRect] = []
 var health: int = 3
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready() -> void:
 	var hearts_parent = $HBoxContainer
 	for child in hearts_parent.get_children():

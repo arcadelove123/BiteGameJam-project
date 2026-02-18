@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ce38xs563mp5g" path="res://Assets/testTileset.png" id="1_r057v"]
 [ext_resource type="PackedScene" uid="uid://bbgsjhur6fokm" path="res://MainCharacter/main_character.tscn" id="2_oemjb"]
 [ext_resource type="PackedScene" uid="uid://c8swoyikilgdo" path="res://Web/WebSpawner.tscn" id="3_ayjuu"]
+[ext_resource type="PackedScene" path="res://Bird/BirdSpawner.tscn" id="4_0w6td"]
 [ext_resource type="PackedScene" uid="uid://dxaao148m4pbp" path="res://Web/spider_web_shooter.tscn" id="4_65cun"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oemjb"]
@@ -155,9 +156,16 @@ offset_bottom = 40.0
 
 [node name="Main-character" parent="." unique_id=1231940662 instance=ExtResource("2_oemjb")]
 
-[node name="SpiderWebShooter" parent="." unique_id=84399885 node_paths=PackedStringArray("spawners") instance=ExtResource("4_65cun")]
-position = Vector2(515, 611)
-spawners = [NodePath("../WebSpawner")]
+[node name="BirdSpawner" parent="." unique_id=1805191623 node_paths=PackedStringArray("start_node", "target_node") instance=ExtResource("4_0w6td")]
+position = Vector2(217, 561)
+start_node = NodePath("Marker2D2")
+target_node = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="BirdSpawner" unique_id=513933497]
+position = Vector2(122, 32)
+
+[node name="Marker2D2" type="Marker2D" parent="BirdSpawner" unique_id=1829689148]
+position = Vector2(323, -305)
 
 [node name="SpiderWebShooter2" parent="." unique_id=161974931 node_paths=PackedStringArray("spawners") instance=ExtResource("4_65cun")]
 position = Vector2(678, 511)
@@ -168,6 +176,10 @@ target_node = NodePath("Marker2D")
 
 [node name="Marker2D" type="Marker2D" parent="WebSpawner2" unique_id=1739356054]
 position = Vector2(881, 583)
+
+[node name="SpiderWebShooter" parent="." unique_id=84399885 node_paths=PackedStringArray("spawners") instance=ExtResource("4_65cun")]
+position = Vector2(515, 611)
+spawners = [NodePath("../WebSpawner")]
 
 [node name="WebSpawner" parent="." unique_id=610084036 node_paths=PackedStringArray("target_node") instance=ExtResource("3_ayjuu")]
 position = Vector2(207, 272)
