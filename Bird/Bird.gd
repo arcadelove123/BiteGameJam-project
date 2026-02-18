@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var speed: float = 800.0
+@export var speed: float = 300.0
 @export var warning_duration: float = 1.0
 @export var lifetime: float = 5.0
 
@@ -20,6 +20,7 @@ func _ready():
 	body_entered.connect(_on_body_entered)
 
 func setup(start_pos: Vector2, target_pos: Vector2):
+	$BirdSprite.play("fly")
 	global_position = start_pos
 	target_position = target_pos
 	
@@ -30,6 +31,11 @@ func setup(start_pos: Vector2, target_pos: Vector2):
 		move_direction = Vector2.RIGHT
 		
 	look_at(target_pos)
+	
+	if abs(rotation) > PI / 2:
+		bird_sprite.flip_v = true
+	else:
+		bird_sprite.flip_v = false
 	
 	if not is_inside_tree():
 		await ready
