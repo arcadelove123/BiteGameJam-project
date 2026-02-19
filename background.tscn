@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://bmi1fl1udaa4m"]
+
+[ext_resource type="Texture2D" uid="uid://c4us2xnw5vwu5" path="res://background/building_close_1_extends.png" id="1_oabld"]
+[ext_resource type="Texture2D" uid="uid://dkv1w3exanfca" path="res://background/cloud2.png" id="1_xehqc"]
+[ext_resource type="Texture2D" uid="uid://cabaax7edir5h" path="res://background/cloud1.png" id="2_i7s6n"]
+
+[node name="Background" type="Node2D" unique_id=1347247109]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1683610834]
+
+[node name="Parallax2D2" type="Parallax2D" parent="ParallaxBackground" unique_id=1858878550]
+texture_filter = 1
+scroll_scale = Vector2(2, 2)
+scroll_offset = Vector2(0, -13)
+repeat_size = Vector2(4000, 2000)
+autoscroll = Vector2(80, 0)
+repeat_times = 5
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Parallax2D2" unique_id=483890580]
+texture_filter = 1
+position = Vector2(-1379.9999, 757)
+scale = Vector2(10, 10)
+texture = ExtResource("1_xehqc")
+
+[node name="Parallax2D" type="Parallax2D" parent="ParallaxBackground" unique_id=1966800016]
+texture_filter = 1
+scroll_scale = Vector2(2, 2)
+scroll_offset = Vector2(0, -13)
+repeat_size = Vector2(4000, 2000)
+autoscroll = Vector2(100, 0)
+repeat_times = 5
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Parallax2D" unique_id=813644207]
+texture_filter = 1
+position = Vector2(252.99998, 626.00006)
+scale = Vector2(10, 10)
+texture = ExtResource("2_i7s6n")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1352373759]
+position = Vector2(977, 734)
+motion_mirroring = Vector2(0, 67)
+
+[node name="Parallax2D" type="Parallax2D" parent="ParallaxBackground/ParallaxLayer" unique_id=734021945]
+texture_filter = 1
+scroll_scale = Vector2(0.2, 0)
+scroll_offset = Vector2(-455, -63)
+repeat_size = Vector2(0, 67)
+repeat_times = 5
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer/Parallax2D" unique_id=1618776473]
+texture_filter = 1
+position = Vector2(65, 528)
+scale = Vector2(12, 12)
+texture = ExtResource("1_oabld")

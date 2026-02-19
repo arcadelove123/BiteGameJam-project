@@ -4,8 +4,8 @@ extends CharacterBody2D
 @export var jump_velocity = -450.0
 @export var wall_slide_speed = 150.0
 @export var wall_jump_force = 400.0
-@export var dash_speed = 1200.0
-@export var dash_duration = 0.15
+@export var dash_speed = 500.0
+@export var dash_duration = 0.4
 @export var dash_cooldown = 3.0
 @export var jump_cooldown = 1.0
 
@@ -13,7 +13,7 @@ extends CharacterBody2D
 @export var indicator_anchor: Control.LayoutPreset = Control.PRESET_BOTTOM_RIGHT
 @export var indicator_margin: int = 100
 @export var indicator_offset: Vector2 = Vector2(-20, -20)
-@export var indicator_scale: Vector2 = Vector2(0.5, 0.5)
+@export var indicator_scale: Vector2 = Vector2(2.0, 2.0)
 
 @onready var hpSystem: CanvasLayer = $CanvasGroup/HealthSystem
 
@@ -44,8 +44,9 @@ func _ready():
 		progress.step = 0.01
 		progress.max_value = dash_cooldown
 		progress.value = dash_cooldown
-		progress.texture_under = load("res://Assets/icon.svg")
-		progress.texture_progress = load("res://Assets/icon.svg")
+		progress.texture_under = load("dash.png")
+		progress.texture_progress = load("dash.png")
+		progress.texture_filter = TEXTURE_FILTER_NEAREST
 		progress.tint_under = Color(0.2, 0.2, 0.2, 0.5)
 		progress.tint_progress = Color(1, 1, 1, 1)
 		progress.scale = indicator_scale
@@ -54,14 +55,16 @@ func _ready():
 		cl.add_child(progress)
 		dash_indicator = progress
 
+	if dash_indicator:
+		dash_indicator.scale = indicator_scale
+
+
 func _physics_process(delta):
+	var target_rotation = 0.0
 	if is_on_wall_only():
-		if $AnimatedSprite2D.flip_h:
-			$AnimatedSprite2D.rotation_degrees = -90
-		else:
-			$AnimatedSprite2D.rotation_degrees = 90
-	else:
-		$AnimatedSprite2D.rotation_degrees = 0
+		target_rotation = deg_to_rad(-90 if $AnimatedSprite2D.flip_h else 90)
+	$AnimatedSprite2D.rotation = lerp_angle($AnimatedSprite2D.rotation, target_rotation, 10.0 * delta)
+
 
 	if dash_cooldown_timer > 0:
 		dash_cooldown_timer -= delta
@@ -74,8 +77,11 @@ func _physics_process(delta):
 		jump_cooldown_timer -= delta
 	if is_dashing:
 		dash_timer -= delta
+		var progress = 1.0 - (dash_timer / dash_duration)
+		$AnimatedSprite2D.rotation = progress * TAU * facing_direction
 		if dash_timer <= 0:
 			is_dashing = false
+			$AnimatedSprite2D.rotation = 0
 		move_and_slide()
 		return
 
@@ -86,7 +92,7 @@ func _physics_process(delta):
 		else:
 			velocity.y += gravity * delta
 
-	var jump_attempt = Input.is_action_just_pressed("ui_accept") or Input.is_action_just_pressed("ui_up")
+	var jump_attempt = Input.is_action_just_pressed("move_up")
 
 	if jump_attempt and jump_cooldown_timer <= 0:
 		if is_on_floor():
@@ -107,10 +113,12 @@ func _physics_process(delta):
 		velocity.x = direction * current_speed
 		facing_direction = sign(direction)
 		$AnimatedSprite2D.flip_h = facing_direction > 0
-		$AnimatedSprite2D.play("default")
+		if $AnimatedSprite2D.animation != "roll" or not $AnimatedSprite2D.is_playing():
+			$AnimatedSprite2D.play("default")
 	else:
 		velocity.x = move_toward(velocity.x, 0, current_speed)
-		$AnimatedSprite2D.stop()
+		if $AnimatedSprite2D.animation != "roll" or not $AnimatedSprite2D.is_playing():
+			$AnimatedSprite2D.stop()
 
 	if Input.is_action_just_pressed("dash") and dash_cooldown_timer <= 0:
 		start_dash()
@@ -119,6 +127,9 @@ func _physics_process(delta):
 
 func start_dash():
 	is_dashing = true
+	if $AnimatedSprite2D.sprite_frames.has_animation("roll"):
+		$AnimatedSprite2D.sprite_frames.set_animation_loop("roll", false)
+	$AnimatedSprite2D.play("roll")
 	dash_timer = dash_duration
 	dash_cooldown_timer = dash_cooldown
 	velocity.x = facing_direction * dash_speed

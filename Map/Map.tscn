@@ -1,9 +1,10 @@
 [gd_scene format=4 uid="uid://di6qcu5prnbg5"]
 
 [ext_resource type="Texture2D" uid="uid://dgitgtyqpwhr0" path="res://Assets/1 Tiles/BayTile_38.png" id="1_cccvd"]
-[ext_resource type="Script" uid="uid://b2jwv1dxdccj6" path="res://Map/map.gd" id="1_jq5q4"]
+[ext_resource type="Script" path="res://Map/map.gd" id="1_jq5q4"]
 [ext_resource type="Texture2D" uid="uid://ct1hwnymvmg5q" path="res://Assets/1 Tiles/Tile_04.png" id="2_0g0qh"]
 [ext_resource type="Texture2D" uid="uid://c2l8bp1hat0qc" path="res://Assets/1 Tiles/BayTile_07.png" id="2_jq5q4"]
+[ext_resource type="PackedScene" uid="uid://bmi1fl1udaa4m" path="res://background.tscn" id="2_s8uph"]
 [ext_resource type="Texture2D" uid="uid://8xoggw3rly67" path="res://Assets/1 Tiles/BayTile_09.png" id="3_ehio4"]
 [ext_resource type="Texture2D" uid="uid://hjtc41twbbr8" path="res://Assets/1 Tiles/Tile_01.png" id="3_t64y5"]
 [ext_resource type="Texture2D" uid="uid://bs07sjn2m4fwj" path="res://Assets/1 Tiles/BayTile_08.png" id="4_7a0j3"]
@@ -229,6 +230,8 @@ size = Vector2(848, 20)
 [node name="Map" type="Node2D" unique_id=1644254592]
 script = ExtResource("1_jq5q4")
 
+[node name="Background" parent="." unique_id=2018306294 instance=ExtResource("2_s8uph")]
+
 [node name="TileMap" type="TileMap" parent="." unique_id=917110467]
 format = 2
 
@@ -243,6 +246,7 @@ tile_map_data = PackedByteArray("AAAnAA4AAAAAAAAAAAAnAA8AAAAAAAEAAAAoAA8AAAABAAE
 tile_set = SubResource("TileSet_vrbmt")
 
 [node name="Main-character" parent="." unique_id=1231940662 instance=ExtResource("14_ehio4")]
+position = Vector2(7, -41)
 
 [node name="LeftAreas" type="Node2D" parent="." unique_id=542322291]
 
