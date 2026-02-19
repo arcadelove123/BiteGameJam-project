@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cd07w0q8y2oki"]
 
 [ext_resource type="Script" uid="uid://m1gurxyci8co" path="res://MainCharacter/health_system.gd" id="1_6i172"]
-[ext_resource type="Texture2D" uid="uid://dfhksnbfe7m57" path="res://Assets/icon.svg" id="1_v24s1"]
+[ext_resource type="Texture2D" uid="uid://db45l8vkuxws" path="res://Assets/leaf.png" id="2_6i172"]
 
 [node name="HealthSystem" type="CanvasLayer" unique_id=1772652342]
 script = ExtResource("1_6i172")
@@ -17,24 +17,27 @@ custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/TextureRect" unique_id=1137812481]
+texture_filter = 1
 position = Vector2(36, 30)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_v24s1")
+scale = Vector2(2, 2)
+texture = ExtResource("2_6i172")
 
 [node name="TextureRect2" type="TextureRect" parent="HBoxContainer" unique_id=531702971]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/TextureRect2" unique_id=525942097]
+texture_filter = 1
 position = Vector2(36, 30)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_v24s1")
+scale = Vector2(2, 2)
+texture = ExtResource("2_6i172")
 
 [node name="TextureRect3" type="TextureRect" parent="HBoxContainer" unique_id=456999677]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/TextureRect3" unique_id=752672206]
+texture_filter = 1
 position = Vector2(36, 30)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_v24s1")
+scale = Vector2(2, 2)
+texture = ExtResource("2_6i172")
