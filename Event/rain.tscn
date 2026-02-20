@@ -26,6 +26,8 @@ process_material = SubResource("ParticleProcessMaterial_kwx4i")
 script = ExtResource("1_medp1")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=139420112]
+modulate = Color(1, 1, 1, 0.5019608)
+self_modulate = Color(1, 1, 1, 0.5019608)
 offset_left = -246.0
 offset_top = -5.0
 offset_right = 246.0
