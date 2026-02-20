@@ -71,9 +71,13 @@ texture = ExtResource("3_ehio4")
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tlvak"]
 texture = ExtResource("4_7a0j3")
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4r87e"]
 texture = ExtResource("5_0g0qh")
@@ -280,7 +284,6 @@ position = Vector2(448.00003, 194.00002)
 scale = Vector2(3, 3)
 
 [node name="Rain" parent="." unique_id=927174176 instance=ExtResource("19_2q318")]
-visible = false
 position = Vector2(1288, -54)
 
 [node name="LeftCover" type="ColorRect" parent="." unique_id=1249541636]
