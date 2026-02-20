@@ -8,6 +8,10 @@ extends CharacterBody2D
 @export var dash_duration = 0.4
 @export var dash_cooldown = 3.0
 @export var jump_cooldown = 1.0
+@export_group("Dash Reflect")
+@export var dash_reflect_push_x: float = 800.0
+@export var dash_reflect_push_y: float = 520.0
+@export var dash_reflect_random_x: float = 90.0
 
 @export_group("Dash UI")
 @export var indicator_anchor: Control.LayoutPreset = Control.PRESET_BOTTOM_RIGHT
@@ -187,6 +191,22 @@ func set_damage_ignore(reason: StringName, enabled: bool, duration: float = 0.0)
 
 func _on_damage_ignore_timer_timeout(reason: StringName) -> void:
 	set_damage_ignore(reason, false)
+
+func on_damage_ignored(amount: int = 1) -> void:
+	if amount <= 0:
+		return
+	if not is_dashing:
+		return
+
+	var horizontal_direction: float = - sign(facing_direction)
+	if horizontal_direction == 0:
+		horizontal_direction = -1.0
+	var reflect_x: float = horizontal_direction * (dash_reflect_push_x + randf_range(-dash_reflect_random_x, dash_reflect_random_x))
+	velocity = Vector2(reflect_x, -dash_reflect_push_y)
+
+	is_dashing = false
+	set_damage_ignore(&"dash", false)
+	$AnimatedSprite2D.rotation = 0
 
 func set_stun(reason: StringName, enabled: bool, duration: float = 0.0) -> void:
 	if enabled:

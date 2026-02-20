@@ -144,6 +144,12 @@ offset = Vector2(0, -4.051732)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=647003749]
 zoom = Vector2(2, 2)
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.15
+drag_top_margin = 0.15
+drag_right_margin = 0.15
+drag_bottom_margin = 0.15
 
 [node name="CanvasGroup" type="CanvasGroup" parent="." unique_id=734372684]
 
