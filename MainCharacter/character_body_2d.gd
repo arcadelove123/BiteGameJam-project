@@ -20,6 +20,7 @@ extends CharacterBody2D
 @export var indicator_scale: Vector2 = Vector2(2.0, 2.0)
 
 @onready var hpSystem: CanvasLayer = $CanvasGroup/HealthSystem
+@onready var camera_2d: Camera2D = $Camera2D
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var facing_direction = 1.0
@@ -37,6 +38,15 @@ var stun_reasons: Dictionary = {}
 var stun_timers: Dictionary = {}
 var damage_ignore_reasons: Dictionary = {}
 var damage_ignore_timers: Dictionary = {}
+var camera_limit_sources: Dictionary = {}
+var camera_limit_sequence: int = 0
+var default_camera_limits := {
+	"enabled": true,
+	"left": -10000000,
+	"top": -10000000,
+	"right": 10000000,
+	"bottom": 10000000
+}
 
 func _ready():
 	recharge_sound = AudioStreamPlayer.new()
@@ -66,6 +76,14 @@ func _ready():
 
 	if dash_indicator:
 		dash_indicator.scale = indicator_scale
+	if camera_2d:
+		default_camera_limits = {
+			"enabled": camera_2d.limit_enabled,
+			"left": camera_2d.limit_left,
+			"top": camera_2d.limit_top,
+			"right": camera_2d.limit_right,
+			"bottom": camera_2d.limit_bottom
+		}
 
 
 func _physics_process(delta):
@@ -240,3 +258,55 @@ func stun(duration: float = 0.0):
 
 func unstun():
 	set_stun(&"default", false)
+
+func push_camera_limits(source: Node, world_rect: Rect2, priority: int = 0) -> void:
+	if camera_2d == null or source == null:
+		return
+
+	camera_limit_sequence += 1
+	camera_limit_sources[source] = {
+		"priority": priority,
+		"sequence": camera_limit_sequence,
+		"rect": world_rect
+	}
+	_apply_camera_limits()
+
+func pop_camera_limits(source: Node) -> void:
+	if source == null:
+		return
+	camera_limit_sources.erase(source)
+	_apply_camera_limits()
+
+func _apply_camera_limits() -> void:
+	if camera_2d == null:
+		return
+
+	var best_source: Node = null
+	var best_priority: int = -2147483648
+	var best_sequence: int = -2147483648
+
+	for source in camera_limit_sources.keys():
+		if not is_instance_valid(source):
+			continue
+		var data: Dictionary = camera_limit_sources[source]
+		var priority: int = data.get("priority", 0)
+		var sequence: int = data.get("sequence", 0)
+		if priority > best_priority or (priority == best_priority and sequence > best_sequence):
+			best_priority = priority
+			best_sequence = sequence
+			best_source = source
+
+	if best_source == null:
+		camera_2d.limit_enabled = default_camera_limits["enabled"]
+		camera_2d.limit_left = default_camera_limits["left"]
+		camera_2d.limit_top = default_camera_limits["top"]
+		camera_2d.limit_right = default_camera_limits["right"]
+		camera_2d.limit_bottom = default_camera_limits["bottom"]
+		return
+
+	var rect: Rect2 = camera_limit_sources[best_source]["rect"]
+	camera_2d.limit_enabled = true
+	camera_2d.limit_left = int(floor(rect.position.x))
+	camera_2d.limit_top = int(floor(rect.position.y))
+	camera_2d.limit_right = int(ceil(rect.position.x + rect.size.x))
+	camera_2d.limit_bottom = int(ceil(rect.position.y + rect.size.y))
