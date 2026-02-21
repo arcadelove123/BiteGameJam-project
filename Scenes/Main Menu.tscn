@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://cvn73glvwr4qo"]
 
 [ext_resource type="Script" uid="uid://mkk62ys10b5o" path="res://Scenes/main_menu.gd" id="1_totuj"]
-[ext_resource type="Texture2D" uid="uid://crc0khx48k6fv" path="res://Scenes/option 2.png" id="2_eotax"]
 [ext_resource type="Texture2D" uid="uid://db45l8vkuxws" path="res://Assets/leaf.png" id="2_hcxxy"]
+[ext_resource type="Texture2D" uid="uid://judp8u0g6hpl" path="res://Assets/start real.png" id="2_udm2q"]
+[ext_resource type="Texture2D" uid="uid://d38dq3m161mw" path="res://Assets/option real.png" id="3_mjet1"]
 [ext_resource type="Script" uid="uid://c20cbydeseg8j" path="res://Scenes/h_slider.gd" id="3_ur25d"]
+[ext_resource type="Texture2D" uid="uid://dgjdqtiu3dsi2" path="res://Assets/quit real.png" id="4_0126h"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ur25d"]
 bg_color = Color(0.9137255, 0.6901961, 0.92156863, 1)
@@ -47,10 +49,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -150.0
-offset_top = -18.5
-offset_right = 150.0
-offset_bottom = 252.5
+offset_left = -87.0
+offset_top = -1.5
+offset_right = 87.0
+offset_bottom = 269.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 20
@@ -62,9 +64,14 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_ur25d")
 text = "Start"
 
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer/Button" unique_id=1837092473]
+texture_filter = 1
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -40.0
+offset_top = -86.5
+offset_right = 10.0
+offset_bottom = -36.5
+scale = Vector2(5, 5)
+texture = ExtResource("2_udm2q")
 
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=1263082024]
 layout_mode = 2
@@ -75,12 +82,12 @@ text = "Option"
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer/Button2" unique_id=610052223]
 texture_filter = 1
 layout_mode = 1
-offset_left = -21.0
-offset_top = -84.5
-offset_right = 19.0
-offset_bottom = -44.5
-scale = Vector2(8.920005, 5.5599995)
-texture = ExtResource("2_eotax")
+offset_left = -15.0
+offset_top = -71.5
+offset_right = 25.0
+offset_bottom = -31.5
+scale = Vector2(5, 5)
+texture = ExtResource("3_mjet1")
 
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=920721756]
 layout_mode = 2
@@ -91,11 +98,12 @@ text = "Quit"
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer/Button3" unique_id=1713466587]
 texture_filter = 1
 layout_mode = 0
-offset_left = -47.0
-offset_top = -53.499992
-offset_right = -7.0
-offset_bottom = -13.499992
-scale = Vector2(9.799995, 4.8400025)
+offset_left = -40.0
+offset_top = -86.499985
+offset_right = 10.0
+offset_bottom = -36.499985
+scale = Vector2(5, 5)
+texture = ExtResource("4_0126h")
 
 [node name="Panel" type="Panel" parent="." unique_id=205066965]
 visible = false
