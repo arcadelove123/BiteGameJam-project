@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cvffhwr55x077"]
 
 [ext_resource type="Script" uid="uid://bvs7dxah6hafi" path="res://Event/rain.gd" id="1_medp1"]
-[ext_resource type="Texture2D" uid="uid://dfhksnbfe7m57" path="res://Assets/icon.svg" id="2_ab2h2"]
+[ext_resource type="Texture2D" uid="uid://4y2abkd5rco2" path="res://rain_warning.png" id="2_ab2h2"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kwx4i"]
 particle_flag_disable_z = true
@@ -29,11 +29,12 @@ script = ExtResource("1_medp1")
 [node name="TextureRect" type="TextureRect" parent="." unique_id=139420112]
 modulate = Color(1, 1, 1, 0.5019608)
 self_modulate = Color(1, 1, 1, 0.5019608)
-offset_left = -246.0
-offset_top = -5.0
-offset_right = 246.0
-offset_bottom = 9330.0
-scale = Vector2(0.58703554, 0.58703554)
+texture_filter = 1
+offset_left = -148.68097
+offset_top = 27.03291
+offset_right = 343.31903
+offset_bottom = 9362.033
+scale = Vector2(0.13146783, 0.0068467357)
 texture = ExtResource("2_ab2h2")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1616276076]

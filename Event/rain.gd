@@ -2,7 +2,7 @@ extends GPUParticles2D
 
 @export_group("Warning Blink")
 @export var warning_blink_count: int = 3
-@export var warning_min_alpha: float = 0.15
+@export var warning_min_alpha: float = 0
 @export var warning_start_peak_alpha: float = 0.6
 @export var warning_peak_step_alpha: float = 0.4
 @export var warning_up_duration: float = 0.5
@@ -24,12 +24,16 @@ func _ready() -> void:
 			c.monitorable = false
 			c.visible = false
 
+func _process(_delta: float) -> void:
+	var camera = get_viewport().get_camera_2d()
+	if camera:
+		warning.global_position.y = camera.get_screen_center_position().y - 120
 func fade(target_alpha: float, duration: float = 1.0):
 	var tween = create_tween()
 	tween.tween_property(warning, "modulate:a", target_alpha, duration)
 	return tween
 
-func _on_area_2d_body_exited(body: Node2D) -> void:
+func _on_area_2d_body_exited(_body: Node2D) -> void:
 	$Timer2.stop()
 	$Timer3.stop()
 	self.process_material.color.a = 0.0
@@ -37,7 +41,7 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 	player = null
 	
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body is CharacterBody2D:
+	if body.is_in_group("player"):
 		player = body
 		$Timer2.start()
 

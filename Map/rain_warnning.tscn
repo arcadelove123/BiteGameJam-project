@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dyi286muwwh37"]
+
+[ext_resource type="Texture2D" uid="uid://dfhksnbfe7m57" path="res://Assets/icon.svg" id="1_wca8r"]
+
+[node name="Node2D" type="Node2D" unique_id=1702160644]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1443138030]
+scroll_scale = Vector2(0, 1)
+follow_viewport = false
+
+[node name="TextureRect" type="TextureRect" parent="Parallax2D" unique_id=688559387]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_wca8r")
