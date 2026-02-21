@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cvn73glvwr4qo"]
 
 [ext_resource type="Script" uid="uid://mkk62ys10b5o" path="res://Scenes/main_menu.gd" id="1_totuj"]
+[ext_resource type="Texture2D" uid="uid://crc0khx48k6fv" path="res://Scenes/option 2.png" id="2_eotax"]
 [ext_resource type="Texture2D" uid="uid://db45l8vkuxws" path="res://Assets/leaf.png" id="2_hcxxy"]
 [ext_resource type="Script" uid="uid://c20cbydeseg8j" path="res://Scenes/h_slider.gd" id="3_ur25d"]
 
@@ -60,7 +61,7 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/hover = SubResource("StyleBoxFlat_ur25d")
 text = "Start"
 
-[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Button" unique_id=418538380]
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Button" unique_id=1837092473]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -71,11 +72,30 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/hover = SubResource("StyleBoxFlat_eotax")
 text = "Option"
 
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Button2" unique_id=610052223]
+texture_filter = 1
+layout_mode = 1
+offset_left = -21.0
+offset_top = -84.5
+offset_right = 19.0
+offset_bottom = -44.5
+scale = Vector2(8.920005, 5.5599995)
+texture = ExtResource("2_eotax")
+
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=920721756]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
 theme_override_styles/hover = SubResource("StyleBoxFlat_udm2q")
 text = "Quit"
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Button3" unique_id=1713466587]
+texture_filter = 1
+layout_mode = 0
+offset_left = -47.0
+offset_top = -53.499992
+offset_right = -7.0
+offset_bottom = -13.499992
+scale = Vector2(9.799995, 4.8400025)
 
 [node name="Panel" type="Panel" parent="." unique_id=205066965]
 visible = false
