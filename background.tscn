@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cjbnrktpwhxky" path="res://background/sky1.png" id="1_splo0"]
 [ext_resource type="Texture2D" uid="uid://dkv1w3exanfca" path="res://background/cloud2.png" id="1_xehqc"]
 [ext_resource type="Texture2D" uid="uid://cabaax7edir5h" path="res://background/cloud1.png" id="2_i7s6n"]
+[ext_resource type="Texture2D" uid="uid://cj3hb68nkfapm" path="res://background/building_close_2.png" id="5_eq6nc"]
 
 [node name="Background" type="Node2D" unique_id=1347247109]
 
@@ -44,7 +45,7 @@ motion_mirroring = Vector2(0, 67)
 
 [node name="Parallax2D" type="Parallax2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer" unique_id=734021945]
 texture_filter = 1
-scroll_scale = Vector2(0.2, 0)
+scroll_scale = Vector2(0.1, 0)
 scroll_offset = Vector2(-455, -63)
 repeat_size = Vector2(0, 67)
 repeat_times = 5
@@ -70,3 +71,21 @@ texture_filter = 1
 position = Vector2(252.99998, 626.00006)
 scale = Vector2(10, 10)
 texture = ExtResource("2_i7s6n")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground" unique_id=1884084542]
+position = Vector2(977, 734)
+motion_mirroring = Vector2(0, 67)
+
+[node name="Parallax2D" type="Parallax2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer2" unique_id=1900818752]
+texture_filter = 1
+scroll_scale = Vector2(0.15, 0)
+scroll_offset = Vector2(-455, -63)
+repeat_size = Vector2(0, 67)
+repeat_times = 5
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer2/Parallax2D" unique_id=1750923360]
+texture_filter = 1
+position = Vector2(914, -397)
+scale = Vector2(12, 12)
+texture = ExtResource("5_eq6nc")

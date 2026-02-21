@@ -282,7 +282,7 @@ position = Vector2(271, 78)
 time = 1
 
 [node name="Main-character" parent="." unique_id=1231940662 instance=ExtResource("14_ehio4")]
-position = Vector2(616, 8522)
+position = Vector2(616, 499)
 
 [node name="LeftAreas" type="Node2D" parent="." unique_id=542322291]
 visible = false
