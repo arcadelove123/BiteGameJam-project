@@ -5,6 +5,9 @@ extends Node2D
 @export var flight_path: Path2D
 
 @export var cooldown: float = 2.0
+@export var human_speed: float = 600.0
+@export var human_retreat_speed: float = 400.0
+@export var human_warning_duration: float = 1.0
 var can_shoot: bool = true
 
 func _ready():
@@ -41,4 +44,7 @@ func _perform_shoot(path_curve: Curve2D) -> void:
 	get_tree().current_scene.add_child(human)
 	human.global_position = flight_path.global_position if flight_path else global_position
 	human.global_rotation = flight_path.global_rotation if flight_path else global_rotation
+	human.speed = human_speed
+	human.retreat_speed = human_retreat_speed
+	human.warning_duration = human_warning_duration
 	human.setup_with_curve(path_curve)

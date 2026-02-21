@@ -5,6 +5,9 @@ extends Node2D
 @export var flight_path: Path2D
 
 @export var cooldown: float = 2.0
+@export var bird_speed: float = 600.0
+@export var bird_retreat_speed: float = 400.0
+@export var bird_warning_duration: float = 1.0
 var can_shoot: bool = true
 
 func _ready():
@@ -39,5 +42,9 @@ func _perform_shoot(path_curve: Curve2D):
 	
 	var bird = bird_scene.instantiate()
 	get_tree().current_scene.add_child(bird)
-	bird.global_position = global_position
+	bird.global_position = flight_path.global_position if flight_path else global_position
+	bird.global_rotation = flight_path.global_rotation if flight_path else global_rotation
+	bird.speed = bird_speed
+	bird.retreat_speed = bird_retreat_speed
+	bird.warning_duration = bird_warning_duration
 	bird.setup_with_curve(path_curve)
