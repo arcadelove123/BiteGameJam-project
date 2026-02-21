@@ -171,7 +171,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Main-character" parent="." unique_id=1231940662 instance=ExtResource("2_oemjb")]
-position = Vector2(322, 349)
+position = Vector2(824, 545)
 
 [node name="HumanSpawner" parent="." unique_id=843816304 node_paths=PackedStringArray("flight_path") instance=ExtResource("4_6xvmp")]
 position = Vector2(165, 559)

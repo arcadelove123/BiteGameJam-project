@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b1scogwy05l3i"]
 
 [ext_resource type="Script" uid="uid://m2vd7obq6520" path="res://Bird/Bird.gd" id="1_bird_script"]
-[ext_resource type="Texture2D" uid="uid://dfhksnbfe7m57" path="res://Assets/icon.svg" id="2_icon"]
 [ext_resource type="Texture2D" uid="uid://dsetk67ogn8dr" path="res://pidgeon_flying_sprite_sheet.png" id="2_vr1r3"]
+[ext_resource type="Texture2D" uid="uid://6j7orm4fukdw" path="res://warningui1.png" id="3_vr1r3"]
 
 [sub_resource type="Curve2D" id="Curve2D_default"]
 
@@ -104,5 +104,7 @@ flip_h = true
 
 [node name="WarningSprite" type="Sprite2D" parent="PathFollow2D/BirdArea" unique_id=1681689416]
 modulate = Color(1, 0.5, 0, 0.7)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_icon")
+texture_filter = 1
+position = Vector2(3.644143, 0.33128574)
+scale = Vector2(2.4225898, 2.4225898)
+texture = ExtResource("3_vr1r3")
