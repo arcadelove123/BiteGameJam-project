@@ -278,8 +278,54 @@ texture_filter = 1
 tile_map_data = PackedByteArray("AAAnAA4AAAAAAAAAAAAnAA8AAAAAAAEAAAAoAA8AAAABAAEAAAAmAA4AAAAAAAEAAAApAC8AAAAAAAAAAAApADAAAAAAAAEAAAAqADAAAAABAAEAAAAoAC8AAAAAAAEAAAAnAE4AAAAAAAAAAAAnAE8AAAAAAAEAAAAoAE8AAAABAAEAAABAAC4AAQAAAAEAAABBAC0AAQABAAAAAABBAC4AAQABAAEAAABBAC8AAwABAAEAAABBADAAAwABAAEAAABAAC8AAQABAAEAAABAADAAAwAAAAEAAAA/AC8AAQAAAAEAAAA/ADAAAQABAAEAAAA+ADAAAQAAAAEAAABCAC4AAwABAAEAAABXAB8ABwAAAAEAAABZAB8ABgAAAAAAAABZACAABgAAAAEAAABaAB8ABgABAAAAAABaACAABgABAAEAAABZAB4ABgABAAAAAABZAB0AAgABAAEAAABaAB4AAgABAAEAAABYAB8ABgAAAAEAAAD+/x8ABwAAAAEAAAD//x8ABwABAAEAAAAAAB8ABwAAAAEAAAABAB8ABwABAAEAAAACAB8ABwAAAAEAAAADAB8ABwABAAEAAAD8/x8ABAAAAAEAAAD9/x4ABAABAAAAAAD9/x8ABAABAAEAAAD7/yAABAAAAAEAAAD8/yAABAABAAEAAABXAEAABwAAAAEAAABYAEAABgAAAAEAAABZAD4AAgABAAEAAABZAD8ABgABAAAAAABZAEAABgAAAAAAAABZAEEABgAAAAEAAABaAD8AAgABAAEAAABaAEAABgABAAAAAABaAEEABgABAAEAAAD8/0AABAAAAAEAAAD9/z8ABAABAAAAAAD9/0AABAABAAEAAAD7/0EABAAAAAEAAAD8/0EABAABAAEAAAD+/0AABwAAAAEAAAD//0AABwABAAEAAAAAAEAABwAAAAEAAAABAEAABwABAAEAAAACAEAABwAAAAEAAAADAEAABwABAAEAAAAoAFAAAAAAAAEAAAApAFAAAAAAAAAAAAApAFEAAAAAAAEAAAAqAFEAAAABAAEAAAA+AFEAAQAAAAEAAAA/AFAAAQAAAAEAAAA/AFEAAQABAAEAAABAAE8AAQAAAAEAAABAAFAAAQABAAEAAABAAFEAAwAAAAEAAABBAE4AAQABAAAAAABBAE8AAQABAAEAAABBAFAAAwABAAEAAABBAFEAAwABAAEAAABCAE8AAwABAAEAAAD7/2IABAAAAAEAAAD8/2EABAAAAAEAAAD8/2IABAABAAEAAAD9/2AABAABAAAAAAD9/2EABAABAAEAAAD+/2EABwAAAAEAAAD//2EABwABAAEAAAAAAGEABwAAAAEAAAABAGEABwABAAEAAAACAGEABwAAAAEAAAADAGEABwABAAEAAAAoAHEAAAAAAAEAAAApAHEAAAAAAAAAAAApAHIAAAAAAAEAAAAqAHIAAAABAAEAAAA+AHIAAQAAAAEAAAA/AHEAAQAAAAEAAAA/AHIAAQABAAEAAABAAHAAAQAAAAEAAABAAHEAAQABAAEAAABAAHIAAwAAAAEAAABBAG8AAQABAAAAAABBAHAAAQABAAEAAABBAHEAAwABAAEAAABBAHIAAwABAAEAAABCAHAAAwABAAEAAABXAGEABwAAAAEAAABYAGEABgAAAAEAAABZAF8AAgABAAEAAABZAGAABgABAAAAAABZAGEABgAAAAAAAABZAGIABgAAAAEAAABaAGAAAgABAAEAAABaAGEABgABAAAAAABaAGIABgABAAEAAAD7/4MABAAAAAEAAAD8/4IABAAAAAEAAAD8/4MABAABAAEAAAD9/4EABAABAAAAAAD9/4IABAABAAEAAAD+/4IABwAAAAEAAAD//4IABwABAAEAAAAAAIIABwAAAAEAAAABAIIABwABAAEAAAACAIIABwAAAAEAAAADAIIABwABAAEAAAAoAJIAAAAAAAEAAAApAJIAAAAAAAAAAAApAJMAAAAAAAEAAAAqAJMAAAABAAEAAAA+AJMAAQAAAAEAAAA/AJIAAQAAAAEAAAA/AJMAAQABAAEAAABAAJEAAQAAAAEAAABAAJIAAQABAAEAAABAAJMAAwAAAAEAAABBAJAAAQABAAAAAABBAJEAAQABAAEAAABBAJIAAwABAAEAAABBAJMAAwABAAEAAABCAJEAAwABAAEAAABXAIIABwAAAAEAAABYAIIABgAAAAEAAABZAIAAAgABAAEAAABZAIEABgABAAAAAABZAIIABgAAAAAAAABZAIMABgAAAAEAAABaAIEAAgABAAEAAABaAIIABgABAAAAAABaAIMABgABAAEAAAD7/6QABAAAAAEAAAD8/6MABAAAAAEAAAD8/6QABAABAAEAAAD9/6IABAABAAAAAAD9/6MABAABAAEAAAD+/6MABwAAAAEAAAD//6MABwABAAEAAAAAAKMABwAAAAEAAAABAKMABwABAAEAAAACAKMABwAAAAEAAAADAKMABwABAAEAAAAoALMAAAAAAAEAAAApALMAAAAAAAAAAAApALQAAAAAAAEAAAAqALQAAAABAAEAAAA+ALQAAQAAAAEAAAA/ALMAAQAAAAEAAAA/ALQAAQABAAEAAABAALIAAQAAAAEAAABAALMAAQABAAEAAABAALQAAwAAAAEAAABBALEAAQABAAAAAABBALIAAQABAAEAAABBALMAAwABAAEAAABBALQAAwABAAEAAABCALIAAwABAAEAAABXAKMABwAAAAEAAABYAKMABgAAAAEAAABZAKEAAgABAAEAAABZAKIABgABAAAAAABZAKMABgAAAAAAAABZAKQABgAAAAEAAABaAKIAAgABAAEAAABaAKMABgABAAAAAABaAKQABgABAAEAAAD7/8UABAAAAAEAAAD8/8QABAAAAAEAAAD8/8UABAABAAEAAAD9/8MABAABAAAAAAD9/8QABAABAAEAAAD+/8QABwAAAAEAAAD//8QABwABAAEAAAAAAMQABwAAAAEAAAABAMQABwABAAEAAAACAMQABwAAAAEAAAADAMQABwABAAEAAAAoANQAAAAAAAEAAAApANQAAAAAAAAAAAApANUAAAAAAAEAAAAqANUAAAABAAEAAAA+ANUAAQAAAAEAAAA/ANQAAQAAAAEAAAA/ANUAAQABAAEAAABAANMAAQAAAAEAAABAANQAAQABAAEAAABAANUAAwAAAAEAAABBANIAAQABAAAAAABBANMAAQABAAEAAABBANQAAwABAAEAAABBANUAAwABAAEAAABCANMAAwABAAEAAABXAMQABwAAAAEAAABYAMQABgAAAAEAAABZAMIAAgABAAEAAABZAMMABgABAAAAAABZAMQABgAAAAAAAABZAMUABgAAAAEAAABaAMMAAgABAAEAAABaAMQABgABAAAAAABaAMUABgABAAEAAAD7/+YABAAAAAEAAAD8/+UABAAAAAEAAAD8/+YABAABAAEAAAD9/+QABAABAAAAAAD9/+UABAABAAEAAAD+/+UABwAAAAEAAAD//+UABwABAAEAAAAAAOUABwAAAAEAAAABAOUABwABAAEAAAACAOUABwAAAAEAAAADAOUABwABAAEAAAAoAPUAAAAAAAEAAAApAPUAAAAAAAAAAAApAPYAAAAAAAEAAAAqAPYAAAABAAEAAAA+APYAAQAAAAEAAAA/APUAAQAAAAEAAAA/APYAAQABAAEAAABAAPQAAQAAAAEAAABAAPUAAQABAAEAAABAAPYAAwAAAAEAAABBAPMAAQABAAAAAABBAPQAAQABAAEAAABBAPUAAwABAAEAAABBAPYAAwABAAEAAABCAPQAAwABAAEAAABXAOUABwAAAAEAAABYAOUABgAAAAEAAABZAOMAAgABAAEAAABZAOQABgABAAAAAABZAOUABgAAAAAAAABZAOYABgAAAAEAAABaAOQAAgABAAEAAABaAOUABgABAAAAAABaAOYABgABAAEAAAD7/wcBBAAAAAEAAAD8/wYBBAAAAAEAAAD8/wcBBAABAAEAAAD9/wUBBAABAAAAAAD9/wYBBAABAAEAAAD+/wYBBwAAAAEAAAD//wYBBwABAAEAAAAAAAYBBwAAAAEAAAABAAYBBwABAAEAAAACAAYBBwAAAAEAAAADAAYBBwABAAEAAAAoABYBAAAAAAEAAAApABYBAAAAAAAAAAApABcBAAAAAAEAAAAqABcBAAABAAEAAAA+ABcBAQAAAAEAAAA/ABYBAQAAAAEAAAA/ABcBAQABAAEAAABAABUBAQAAAAEAAABAABYBAQABAAEAAABAABcBAwAAAAEAAABBABQBAQABAAAAAABBABUBAQABAAEAAABBABYBAwABAAEAAABBABcBAwABAAEAAABCABUBAwABAAEAAABXAAYBBwAAAAEAAABYAAYBBgAAAAEAAABZAAQBAgABAAEAAABZAAUBBgABAAAAAABZAAYBBgAAAAAAAABZAAcBBgAAAAEAAABaAAUBAgABAAEAAABaAAYBBgABAAAAAABaAAcBBgABAAEAAAD7/ygBBAAAAAEAAAD8/ycBBAAAAAEAAAD8/ygBBAABAAEAAAD9/yYBBAABAAAAAAD9/ycBBAABAAEAAAD+/ycBBwAAAAEAAAD//ycBBwABAAEAAAAAACcBBwAAAAEAAAABACcBBwABAAEAAAACACcBBwAAAAEAAAADACcBBwABAAEAAAAoADcBAAAAAAEAAAApADcBAAAAAAAAAAApADgBAAAAAAEAAAAqADgBAAABAAEAAAA+ADgBAQAAAAEAAAA/ADcBAQAAAAEAAAA/ADgBAQABAAEAAABAADYBAQAAAAEAAABAADcBAQABAAEAAABAADgBAwAAAAEAAABBADUBAQABAAAAAABBADYBAQABAAEAAABBADcBAwABAAEAAABBADgBAwABAAEAAABCADYBAwABAAEAAABXACcBBwAAAAEAAABYACcBBgAAAAEAAABZACUBAgABAAEAAABZACYBBgABAAAAAABZACcBBgAAAAAAAABZACgBBgAAAAEAAABaACYBAgABAAEAAABaACcBBgABAAAAAABaACgBBgABAAEAAAD7/0kBBAAAAAEAAAD8/0gBBAAAAAEAAAD8/0kBBAABAAEAAAD9/0cBBAABAAAAAAD9/0gBBAABAAEAAAD+/0gBBwAAAAEAAAD//0gBBwABAAEAAAAAAEgBBwAAAAEAAAABAEgBBwABAAEAAAACAEgBBwAAAAEAAAADAEgBBwABAAEAAAAoAFgBAAAAAAEAAAApAFgBAAAAAAAAAAApAFkBAAAAAAEAAAAqAFkBAAABAAEAAAA+AFkBAQAAAAEAAAA/AFgBAQAAAAEAAAA/AFkBAQABAAEAAABAAFcBAQAAAAEAAABAAFgBAQABAAEAAABAAFkBAwAAAAEAAABBAFYBAQABAAAAAABBAFcBAQABAAEAAABBAFgBAwABAAEAAABBAFkBAwABAAEAAABCAFcBAwABAAEAAABXAEgBBwAAAAEAAABYAEgBBgAAAAEAAABZAEYBAgABAAEAAABZAEcBBgABAAAAAABZAEgBBgAAAAAAAABZAEkBBgAAAAEAAABaAEcBAgABAAEAAABaAEgBBgABAAAAAABaAEkBBgABAAEAAAD7/2oBBAAAAAEAAAD8/2kBBAAAAAEAAAD8/2oBBAABAAEAAAD9/2gBBAABAAAAAAD9/2kBBAABAAEAAAD+/2kBBwAAAAEAAAD//2kBBwABAAEAAAAAAGkBBwAAAAEAAAABAGkBBwABAAEAAAACAGkBBwAAAAEAAAADAGkBBwABAAEAAAAoAHkBAAAAAAEAAAApAHkBAAAAAAAAAAApAHoBAAAAAAEAAAAqAHoBAAABAAEAAAA+AHoBAQAAAAEAAAA/AHkBAQAAAAEAAAA/AHoBAQABAAEAAABAAHgBAQAAAAEAAABAAHkBAQABAAEAAABAAHoBAwAAAAEAAABBAHcBAQABAAAAAABBAHgBAQABAAEAAABBAHkBAwABAAEAAABBAHoBAwABAAEAAABCAHgBAwABAAEAAABXAGkBBwAAAAEAAABYAGkBBgAAAAEAAABZAGcBAgABAAEAAABZAGgBBgABAAAAAABZAGkBBgAAAAAAAABZAGoBBgAAAAEAAABaAGgBAgABAAEAAABaAGkBBgABAAAAAABaAGoBBgABAAEAAAD7/4sBBAAAAAEAAAD8/4oBBAAAAAEAAAD8/4sBBAABAAEAAAD9/4kBBAABAAAAAAD9/4oBBAABAAEAAAD+/4oBBwAAAAEAAAD//4oBBwABAAEAAAAAAIoBBwAAAAEAAAABAIoBBwABAAEAAAACAIoBBwAAAAEAAAADAIoBBwABAAEAAAAoAJoBAAAAAAEAAAApAJoBAAAAAAAAAAApAJsBAAAAAAEAAAAqAJsBAAABAAEAAAA+AJsBAQAAAAEAAAA/AJoBAQAAAAEAAAA/AJsBAQABAAEAAABAAJkBAQAAAAEAAABAAJoBAQABAAEAAABAAJsBAwAAAAEAAABBAJgBAQABAAAAAABBAJkBAQABAAEAAABBAJoBAwABAAEAAABBAJsBAwABAAEAAABCAJkBAwABAAEAAABXAIoBBwAAAAEAAABYAIoBBgAAAAEAAABZAIgBAgABAAEAAABZAIkBBgABAAAAAABZAIoBBgAAAAAAAABZAIsBBgAAAAEAAABaAIkBAgABAAEAAABaAIoBBgABAAAAAABaAIsBBgABAAEAAAD7/6wBBAAAAAEAAAD8/6sBBAAAAAEAAAD8/6wBBAABAAEAAAD9/6oBBAABAAAAAAD9/6sBBAABAAEAAAD+/6sBBwAAAAEAAAD//6sBBwABAAEAAAAAAKsBBwAAAAEAAAABAKsBBwABAAEAAAACAKsBBwAAAAEAAAADAKsBBwABAAEAAAAoALsBAAAAAAEAAAApALsBAAAAAAAAAAApALwBAAAAAAEAAAAqALwBAAABAAEAAAA+ALwBAQAAAAEAAAA/ALsBAQAAAAEAAAA/ALwBAQABAAEAAABAALoBAQAAAAEAAABAALsBAQABAAEAAABAALwBAwAAAAEAAABBALkBAQABAAAAAABBALoBAQABAAEAAABBALsBAwABAAEAAABBALwBAwABAAEAAABCALoBAwABAAEAAABXAKsBBwAAAAEAAABYAKsBBgAAAAEAAABZAKkBAgABAAEAAABZAKoBBgABAAAAAABZAKsBBgAAAAAAAABZAKwBBgAAAAEAAABaAKoBAgABAAEAAABaAKsBBgABAAAAAABaAKwBBgABAAEAAAD7/80BBAAAAAEAAAD8/8wBBAAAAAEAAAD8/80BBAABAAEAAAD9/8sBBAABAAAAAAD9/8wBBAABAAEAAAD+/8wBBwAAAAEAAAD//8wBBwABAAEAAAAAAMwBBwAAAAEAAAABAMwBBwABAAEAAAACAMwBBwAAAAEAAAADAMwBBwABAAEAAAAoANwBAAAAAAEAAAApANwBAAAAAAAAAAApAN0BAAAAAAEAAAAqAN0BAAABAAEAAAA+AN0BAQAAAAEAAAA/ANwBAQAAAAEAAAA/AN0BAQABAAEAAABAANsBAQAAAAEAAABAANwBAQABAAEAAABAAN0BAwAAAAEAAABBANoBAQABAAAAAABBANsBAQABAAEAAABBANwBAwABAAEAAABBAN0BAwABAAEAAABCANsBAwABAAEAAABXAMwBBwAAAAEAAABYAMwBBgAAAAEAAABZAMoBAgABAAEAAABZAMsBBgABAAAAAABZAMwBBgAAAAAAAABZAM0BBgAAAAEAAABaAMsBAgABAAEAAABaAMwBBgABAAAAAABaAM0BBgABAAEAAAD7/+4BBAAAAAEAAAD8/+0BBAAAAAEAAAD8/+4BBAABAAEAAAD9/+wBBAABAAAAAAD9/+0BBAABAAEAAAD+/+0BBwAAAAEAAAD//+0BBwABAAEAAAAAAO0BBwAAAAEAAAABAO0BBwABAAEAAAACAO0BBwAAAAEAAAADAO0BBwABAAEAAAAoAP0BAAAAAAEAAAApAP0BAAAAAAAAAAApAP4BAAAAAAEAAAAqAP4BAAABAAEAAAA+AP4BAQAAAAEAAAA/AP0BAQAAAAEAAAA/AP4BAQABAAEAAABAAPwBAQAAAAEAAABAAP0BAQABAAEAAABAAP4BAwAAAAEAAABBAPsBAQABAAAAAABBAPwBAQABAAEAAABBAP0BAwABAAEAAABBAP4BAwABAAEAAABCAPwBAwABAAEAAABXAO0BBwAAAAEAAABYAO0BBgAAAAEA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AABZAB8CBwABAAEAAABaAB8CBwAAAAEAAABbAB8CBwABAAEAAABcAB8CBwAAAAEAAABdAB8CBwABAAEAAABeAB8CBwAAAAEAAABfAB8CBwABAAEAAACnAB4CCAAAAAEAAACoAB4CCAABAAEAAACpAB4CCAAAAAEAAACqAB4CCAABAAEAAACrAB4CCAAAAAEAAACsAB4CCAABAAEAAACtAB4CCAAAAAEAAACuAB4CCAABAAEAAACvAB4CCAAAAAEAAACwAB4CCAABAAEAAACxAB4CCAAAAAEAAACyAB4CCAABAAEAAACzAB4CCAAAAAEAAAC0AB4CCAABAAEAAAC1AB4CCAAAAAEAAAC2AB4CCAABAAEAAAC3AB4CCAAAAAEAAAC4AB4CCAABAAEAAAC5AB4CCAAAAAEAAAC6AB4CCAABAAEAAAC7AB4CCAAAAAEAAAC8AB4CCAABAAEAAACtABsCAAAAAAAAAACtABwCAAAAAAEAAACuABwCAAABAAEAAACrABkCAAAAAAAAAACrABoCAAAAAAEAAACsABoCAAABAAEAAACpABcCAAAAAAAAAACpABgCAAAAAAEAAACqABgCAAABAAEAAACnABUCAAAAAAAAAACnABYCAAAAAAEAAACoABYCAAABAAEAAAClABMCAAAAAAAAAAClABQCAAAAAAEAAACmABQCAAABAAEAAACjABECAAAAAAAAAACjABICAAAAAAEAAACkABICAAABAAEAAAChAA8CAAAAAAAAAAChABACAAAAAAEAAACiABACAAABAAEAAACfAA0CAAAAAAAAAACfAA4CAAAAAAEAAACgAA4CAAABAAEAAACdAAsCAAAAAAAAAACdAAwCAAAAAAEAAACeAAwCAAABAAEAAACbAAkCAAAAAAAAAACbAAoCAAAAAAEAAACcAAoCAAABAAEAAACZAAcCAAAAAAAAAACZAAgCAAAAAAEAAACaAAgCAAABAAEAAACXAAUCAAAAAAAAAACXAAYCAAAAAAEAAACYAAYCAAABAAEAAACVAAMCAAAAAAAAAACVAAQCAAAAAAEAAACWAAQCAAABAAEAAACWAAUCAAAAAAEAAACYAAcCAAAAAAEAAACaAAkCAAAAAAEAAACcAAsCAAAAAAEAAACeAA0CAAAAAAEAAACgAA8CAAAAAAEAAACiABECAAAAAAEAAACkABMCAAAAAAEAAACmABUCAAAAAAEAAACoABcCAAAAAAEAAACqABkCAAAAAAEAAACsABsCAAAAAAEAAACUABwCCAAAAAAAAGCUABsCCAABAAAAAGBCABwCBQAAAAAAAABDABwCBQABAAAAAABDAB0CBQABAAEAAABEABwCBwABAAAAAABEAB0CBwABAAEAAAA=")
 tile_set = SubResource("TileSet_vrbmt")
 
-[node name="Ash" parent="." unique_id=1768633402 instance=ExtResource("17_t64y5")]
+[node name="Ashes" type="Node2D" parent="." unique_id=1806691580]
+
+[node name="Ash" parent="Ashes" unique_id=1768633402 instance=ExtResource("17_t64y5")]
 position = Vector2(271, 78)
+time = 1
+
+[node name="Ash2" parent="Ashes" unique_id=1383421852 instance=ExtResource("17_t64y5")]
+position = Vector2(365, 110)
+time = 1
+
+[node name="Ash3" parent="Ashes" unique_id=209177820 instance=ExtResource("17_t64y5")]
+position = Vector2(560, 174)
+time = 1
+
+[node name="Ash4" parent="Ashes" unique_id=204866276 instance=ExtResource("17_t64y5")]
+position = Vector2(892, 238)
+time = 1
+
+[node name="Ash5" parent="Ashes" unique_id=2097940880 instance=ExtResource("17_t64y5")]
+position = Vector2(366, 333)
+time = 1
+
+[node name="Ash6" parent="Ashes" unique_id=632507628 instance=ExtResource("17_t64y5")]
+position = Vector2(366, 333)
+time = 1
+
+[node name="Ash7" parent="Ashes" unique_id=804149118 instance=ExtResource("17_t64y5")]
+position = Vector2(274, 365)
+time = 1
+
+[node name="Ash8" parent="Ashes" unique_id=473161135 instance=ExtResource("17_t64y5")]
+position = Vector2(-134, 509)
+time = 1
+
+[node name="Ash9" parent="Ashes" unique_id=1118521417 instance=ExtResource("17_t64y5")]
+position = Vector2(85, 429)
+time = 1
+
+[node name="Ash10" parent="Ashes" unique_id=1485449359 instance=ExtResource("17_t64y5")]
+position = Vector2(777, 765)
+time = 1
+
+[node name="Ash11" parent="Ashes" unique_id=354471229 instance=ExtResource("17_t64y5")]
+position = Vector2(865, 765)
+time = 1
+
+[node name="Ash12" parent="Ashes" unique_id=626947699 instance=ExtResource("17_t64y5")]
+position = Vector2(109, 541)
 time = 1
 
 [node name="Main-character" parent="." unique_id=1231940662 instance=ExtResource("14_ehio4")]
@@ -311,26 +357,433 @@ position = Vector2(1944, 8550)
 shape = SubResource("RectangleShape2D_bl6si")
 
 [node name="Light" parent="." unique_id=1053897446 instance=ExtResource("18_b3jsu")]
-visible = false
 position = Vector2(448.00003, 194.00002)
 scale = Vector2(3, 3)
 
 [node name="Waterdrop" type="Node2D" parent="." unique_id=977309975]
 
 [node name="Waterdrop" parent="Waterdrop" unique_id=155347294 instance=ExtResource("21_kmgy4")]
-position = Vector2(1163, 318)
-scale = Vector2(0.5, 0.5)
-
-[node name="Waterdrop2" parent="Waterdrop" unique_id=421462653 instance=ExtResource("21_kmgy4")]
-position = Vector2(1307, 414)
+position = Vector2(1162, 312)
 scale = Vector2(0.5, 0.5)
 
 [node name="Waterdrop3" parent="Waterdrop" unique_id=1107599639 instance=ExtResource("21_kmgy4")]
-position = Vector2(1210, 350)
+position = Vector2(1210, 344)
 scale = Vector2(0.5, 0.5)
 
-[node name="Waterdrop4" parent="Waterdrop" unique_id=1889290036 instance=ExtResource("21_kmgy4")]
+[node name="Waterdrop2" parent="Waterdrop" unique_id=421462653 instance=ExtResource("21_kmgy4")]
+position = Vector2(1306, 408)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop6" parent="Waterdrop" unique_id=2119512303 instance=ExtResource("21_kmgy4")]
+position = Vector2(1335, 552)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop5" parent="Waterdrop" unique_id=1643101101 instance=ExtResource("21_kmgy4")]
+position = Vector2(1238, 616)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop4" parent="Waterdrop" unique_id=427677126 instance=ExtResource("21_kmgy4")]
+position = Vector2(1090, 712)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop67" parent="Waterdrop" unique_id=1391921944 instance=ExtResource("21_kmgy4")]
+position = Vector2(1162, 7176)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop68" parent="Waterdrop" unique_id=1838075519 instance=ExtResource("21_kmgy4")]
+position = Vector2(1210, 7208)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop69" parent="Waterdrop" unique_id=1873343598 instance=ExtResource("21_kmgy4")]
+position = Vector2(1306, 7272)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop70" parent="Waterdrop" unique_id=570454533 instance=ExtResource("21_kmgy4")]
+position = Vector2(1335, 7416)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop71" parent="Waterdrop" unique_id=237734015 instance=ExtResource("21_kmgy4")]
+position = Vector2(1238, 7480)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop72" parent="Waterdrop" unique_id=800017475 instance=ExtResource("21_kmgy4")]
+position = Vector2(1090, 7576)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop73" parent="Waterdrop" unique_id=940258035 instance=ExtResource("21_kmgy4")]
+position = Vector2(1162, 7704)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop74" parent="Waterdrop" unique_id=771060794 instance=ExtResource("21_kmgy4")]
+position = Vector2(1210, 7736)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop75" parent="Waterdrop" unique_id=325950915 instance=ExtResource("21_kmgy4")]
+position = Vector2(1306, 7800)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop76" parent="Waterdrop" unique_id=1986335876 instance=ExtResource("21_kmgy4")]
+position = Vector2(1335, 7944)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop77" parent="Waterdrop" unique_id=835903068 instance=ExtResource("21_kmgy4")]
+position = Vector2(1238, 8008)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop78" parent="Waterdrop" unique_id=830436934 instance=ExtResource("21_kmgy4")]
+position = Vector2(1090, 8104)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop79" parent="Waterdrop" unique_id=1222242597 instance=ExtResource("21_kmgy4")]
+position = Vector2(1159, 8232)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop80" parent="Waterdrop" unique_id=430480389 instance=ExtResource("21_kmgy4")]
+position = Vector2(1207, 8264)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop81" parent="Waterdrop" unique_id=461371347 instance=ExtResource("21_kmgy4")]
+position = Vector2(1303, 8328)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop82" parent="Waterdrop" unique_id=567617289 instance=ExtResource("21_kmgy4")]
+position = Vector2(1332, 8472)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop83" parent="Waterdrop" unique_id=1090649981 instance=ExtResource("21_kmgy4")]
+position = Vector2(1235, 8536)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop84" parent="Waterdrop" unique_id=597524987 instance=ExtResource("21_kmgy4")]
+position = Vector2(1087, 8632)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop85" parent="Waterdrop" unique_id=218705183 instance=ExtResource("21_kmgy4")]
+position = Vector2(1162, 6648)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop86" parent="Waterdrop" unique_id=352716976 instance=ExtResource("21_kmgy4")]
+position = Vector2(1210, 6680)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop87" parent="Waterdrop" unique_id=203505559 instance=ExtResource("21_kmgy4")]
+position = Vector2(1306, 6744)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop88" parent="Waterdrop" unique_id=1012436107 instance=ExtResource("21_kmgy4")]
+position = Vector2(1335, 6888)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop89" parent="Waterdrop" unique_id=598430846 instance=ExtResource("21_kmgy4")]
+position = Vector2(1238, 6952)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop90" parent="Waterdrop" unique_id=984790388 instance=ExtResource("21_kmgy4")]
+position = Vector2(1090, 7048)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop13" parent="Waterdrop" unique_id=1449469735 instance=ExtResource("21_kmgy4")]
+position = Vector2(1209, 1400)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop14" parent="Waterdrop" unique_id=514253105 instance=ExtResource("21_kmgy4")]
+position = Vector2(1257, 1432)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop15" parent="Waterdrop" unique_id=74950325 instance=ExtResource("21_kmgy4")]
+position = Vector2(1353, 1496)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop16" parent="Waterdrop" unique_id=1642031911 instance=ExtResource("21_kmgy4")]
+position = Vector2(1382, 1576)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop17" parent="Waterdrop" unique_id=390087844 instance=ExtResource("21_kmgy4")]
+position = Vector2(1285, 1640)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop18" parent="Waterdrop" unique_id=338115226 instance=ExtResource("21_kmgy4")]
+position = Vector2(1137, 1736)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop22" parent="Waterdrop" unique_id=425638408 instance=ExtResource("21_kmgy4")]
+position = Vector2(1258, 2488)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop23" parent="Waterdrop" unique_id=1112399964 instance=ExtResource("21_kmgy4")]
+position = Vector2(1306, 2520)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop24" parent="Waterdrop" unique_id=1996636884 instance=ExtResource("21_kmgy4")]
+position = Vector2(1402, 2584)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop25" parent="Waterdrop" unique_id=1170141757 instance=ExtResource("21_kmgy4")]
+position = Vector2(1334, 2664)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop26" parent="Waterdrop" unique_id=44469915 instance=ExtResource("21_kmgy4")]
+position = Vector2(1237, 2728)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop27" parent="Waterdrop" unique_id=1172771174 instance=ExtResource("21_kmgy4")]
+position = Vector2(1089, 2824)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop7" parent="Waterdrop" unique_id=2062700528 instance=ExtResource("21_kmgy4")]
+position = Vector2(1114, 808)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop8" parent="Waterdrop" unique_id=18274457 instance=ExtResource("21_kmgy4")]
+position = Vector2(1212, 872)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop9" parent="Waterdrop" unique_id=1476768442 instance=ExtResource("21_kmgy4")]
+position = Vector2(1306, 936)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop19" parent="Waterdrop" unique_id=1438979100 instance=ExtResource("21_kmgy4")]
+position = Vector2(1160, 1896)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop20" parent="Waterdrop" unique_id=26919982 instance=ExtResource("21_kmgy4")]
+position = Vector2(1258, 1960)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop21" parent="Waterdrop" unique_id=1772387526 instance=ExtResource("21_kmgy4")]
+position = Vector2(1352, 2024)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop28" parent="Waterdrop" unique_id=2081433331 instance=ExtResource("21_kmgy4")]
+position = Vector2(1115, 2920)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop29" parent="Waterdrop" unique_id=1448725842 instance=ExtResource("21_kmgy4")]
+position = Vector2(1213, 2984)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop30" parent="Waterdrop" unique_id=923484482 instance=ExtResource("21_kmgy4")]
+position = Vector2(1307, 3048)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop10" parent="Waterdrop" unique_id=1137428959 instance=ExtResource("21_kmgy4")]
+position = Vector2(1286, 2168)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop11" parent="Waterdrop" unique_id=433463624 instance=ExtResource("21_kmgy4")]
+position = Vector2(1237, 2200)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop12" parent="Waterdrop" unique_id=1643842326 instance=ExtResource("21_kmgy4")]
+position = Vector2(1093, 2296)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop31" parent="Waterdrop" unique_id=1854053700 instance=ExtResource("21_kmgy4")]
+position = Vector2(1381, 3160)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop32" parent="Waterdrop" unique_id=384763079 instance=ExtResource("21_kmgy4")]
+position = Vector2(1332, 3192)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop33" parent="Waterdrop" unique_id=521217803 instance=ExtResource("21_kmgy4")]
+position = Vector2(1188, 3288)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop34" parent="Waterdrop" unique_id=818244345 instance=ExtResource("21_kmgy4")]
+position = Vector2(1162, 3480)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop35" parent="Waterdrop" unique_id=1522712729 instance=ExtResource("21_kmgy4")]
+position = Vector2(1210, 3512)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop36" parent="Waterdrop" unique_id=1059588000 instance=ExtResource("21_kmgy4")]
+position = Vector2(1306, 3576)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop37" parent="Waterdrop" unique_id=238955901 instance=ExtResource("21_kmgy4")]
+position = Vector2(1209, 4568)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop38" parent="Waterdrop" unique_id=1213355360 instance=ExtResource("21_kmgy4")]
+position = Vector2(1257, 4600)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop39" parent="Waterdrop" unique_id=2041698584 instance=ExtResource("21_kmgy4")]
+position = Vector2(1353, 4664)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop40" parent="Waterdrop" unique_id=1385341636 instance=ExtResource("21_kmgy4")]
+position = Vector2(1258, 5656)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop41" parent="Waterdrop" unique_id=1322200269 instance=ExtResource("21_kmgy4")]
+position = Vector2(1306, 5688)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop42" parent="Waterdrop" unique_id=760870920 instance=ExtResource("21_kmgy4")]
+position = Vector2(1402, 5752)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop43" parent="Waterdrop" unique_id=1665586494 instance=ExtResource("21_kmgy4")]
+position = Vector2(1335, 3720)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop44" parent="Waterdrop" unique_id=1716218636 instance=ExtResource("21_kmgy4")]
+position = Vector2(1238, 3784)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop45" parent="Waterdrop" unique_id=948697533 instance=ExtResource("21_kmgy4")]
+position = Vector2(1090, 3880)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop46" parent="Waterdrop" unique_id=4960182 instance=ExtResource("21_kmgy4")]
+position = Vector2(1382, 4744)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop47" parent="Waterdrop" unique_id=1574842133 instance=ExtResource("21_kmgy4")]
+position = Vector2(1285, 4808)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop48" parent="Waterdrop" unique_id=2101824753 instance=ExtResource("21_kmgy4")]
+position = Vector2(1137, 4904)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop49" parent="Waterdrop" unique_id=456946909 instance=ExtResource("21_kmgy4")]
+position = Vector2(1334, 5832)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop50" parent="Waterdrop" unique_id=302559060 instance=ExtResource("21_kmgy4")]
+position = Vector2(1237, 5896)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop51" parent="Waterdrop" unique_id=2132831406 instance=ExtResource("21_kmgy4")]
+position = Vector2(1089, 5992)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop52" parent="Waterdrop" unique_id=1807305351 instance=ExtResource("21_kmgy4")]
+position = Vector2(1114, 3976)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop53" parent="Waterdrop" unique_id=284939680 instance=ExtResource("21_kmgy4")]
+position = Vector2(1212, 4040)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop54" parent="Waterdrop" unique_id=1405755585 instance=ExtResource("21_kmgy4")]
+position = Vector2(1306, 4104)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop55" parent="Waterdrop" unique_id=207074461 instance=ExtResource("21_kmgy4")]
+position = Vector2(1160, 5064)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop56" parent="Waterdrop" unique_id=1745770424 instance=ExtResource("21_kmgy4")]
+position = Vector2(1258, 5128)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop57" parent="Waterdrop" unique_id=1752981669 instance=ExtResource("21_kmgy4")]
+position = Vector2(1352, 5192)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop58" parent="Waterdrop" unique_id=1160902406 instance=ExtResource("21_kmgy4")]
+position = Vector2(1115, 6088)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop59" parent="Waterdrop" unique_id=130339719 instance=ExtResource("21_kmgy4")]
+position = Vector2(1213, 6152)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop60" parent="Waterdrop" unique_id=1966857149 instance=ExtResource("21_kmgy4")]
+position = Vector2(1307, 6216)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop61" parent="Waterdrop" unique_id=1980652599 instance=ExtResource("21_kmgy4")]
+position = Vector2(1286, 5336)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop62" parent="Waterdrop" unique_id=1649854406 instance=ExtResource("21_kmgy4")]
+position = Vector2(1237, 5368)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop63" parent="Waterdrop" unique_id=1010909679 instance=ExtResource("21_kmgy4")]
+position = Vector2(1093, 5464)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop64" parent="Waterdrop" unique_id=396462634 instance=ExtResource("21_kmgy4")]
+position = Vector2(1381, 6328)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop65" parent="Waterdrop" unique_id=1280837476 instance=ExtResource("21_kmgy4")]
+position = Vector2(1332, 6360)
+scale = Vector2(0.5, 0.5)
+
+[node name="Waterdrop66" parent="Waterdrop" unique_id=246838590 instance=ExtResource("21_kmgy4")]
+position = Vector2(1188, 6456)
+scale = Vector2(0.5, 0.5)
+
+[node name="BigWaterdrop" parent="Waterdrop" unique_id=1889290036 instance=ExtResource("21_kmgy4")]
 position = Vector2(1466, 496)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop2" parent="Waterdrop" unique_id=2013498888 instance=ExtResource("21_kmgy4")]
+position = Vector2(1453, 2080)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop3" parent="Waterdrop" unique_id=1528170192 instance=ExtResource("21_kmgy4")]
+position = Vector2(1438, 2608)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop4" parent="Waterdrop" unique_id=2023970612 instance=ExtResource("21_kmgy4")]
+position = Vector2(1451, 3136)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop5" parent="Waterdrop" unique_id=1812874609 instance=ExtResource("21_kmgy4")]
+position = Vector2(1451, 1552)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop6" parent="Waterdrop" unique_id=992189520 instance=ExtResource("21_kmgy4")]
+position = Vector2(1470, 3664)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop7" parent="Waterdrop" unique_id=2082529372 instance=ExtResource("21_kmgy4")]
+position = Vector2(1453, 4192)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop8" parent="Waterdrop" unique_id=1901706846 instance=ExtResource("21_kmgy4")]
+position = Vector2(1431, 4720)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop9" parent="Waterdrop" unique_id=1261084782 instance=ExtResource("21_kmgy4")]
+position = Vector2(1458, 5248)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop10" parent="Waterdrop" unique_id=1327193557 instance=ExtResource("21_kmgy4")]
+position = Vector2(1451, 5776)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop12" parent="Waterdrop" unique_id=1867574997 instance=ExtResource("21_kmgy4")]
+position = Vector2(1452, 6304)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop13" parent="Waterdrop" unique_id=214535658 instance=ExtResource("21_kmgy4")]
+position = Vector2(1470, 6832)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop14" parent="Waterdrop" unique_id=1708971527 instance=ExtResource("21_kmgy4")]
+position = Vector2(1423, 7360)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop15" parent="Waterdrop" unique_id=1021231634 instance=ExtResource("21_kmgy4")]
+position = Vector2(1455, 7888)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop16" parent="Waterdrop" unique_id=1985545159 instance=ExtResource("21_kmgy4")]
+position = Vector2(1450, 8416)
+scale = Vector2(2, 2)
+
+[node name="BigWaterdrop11" parent="Waterdrop" unique_id=886534757 instance=ExtResource("21_kmgy4")]
+position = Vector2(1461, 1024)
 scale = Vector2(2, 2)
 
 [node name="Rain" parent="." unique_id=927174176 instance=ExtResource("19_2q318")]
@@ -353,7 +806,7 @@ offset_bottom = 8700.0
 color = Color(0, 0, 0, 1)
 
 [node name="CoverAll" type="ColorRect" parent="." unique_id=1818187995]
-offset_left = -513.0
+offset_left = -292.0
 offset_top = -130.0
 offset_right = 3586.0
 offset_bottom = 9020.0
