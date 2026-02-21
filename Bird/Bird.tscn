@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://dfhksnbfe7m57" path="res://Assets/icon.svg" id="2_icon"]
 [ext_resource type="Texture2D" uid="uid://dsetk67ogn8dr" path="res://pidgeon_flying_sprite_sheet.png" id="2_vr1r3"]
 
+[sub_resource type="Curve2D" id="Curve2D_default"]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_bird"]
 radius = 20.0
 
@@ -78,23 +80,29 @@ animations = [{
 "speed": 50.0
 }]
 
-[node name="Bird" type="Area2D" unique_id=643880452]
+[node name="Bird" type="Path2D" unique_id=747637483]
+curve = SubResource("Curve2D_default")
+script = ExtResource("1_bird_script")
+speed = 100.0
+
+[node name="PathFollow2D" type="PathFollow2D" parent="." unique_id=2069425623]
+loop = false
+
+[node name="BirdArea" type="Area2D" parent="PathFollow2D" unique_id=667875571]
 scale = Vector2(3.0185423, 3.0185423)
 collision_layer = 2
 collision_mask = 5
-script = ExtResource("1_bird_script")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1052439520]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/BirdArea" unique_id=1309651013]
 shape = SubResource("CircleShape2D_bird")
 
-[node name="BirdSprite" type="AnimatedSprite2D" parent="." unique_id=743832659]
+[node name="BirdSprite" type="AnimatedSprite2D" parent="PathFollow2D/BirdArea" unique_id=1516780494]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_ay1ia")
 animation = &"Fly"
-frame_progress = 0.5589839
 flip_h = true
 
-[node name="WarningSprite" type="Sprite2D" parent="." unique_id=1120500954]
+[node name="WarningSprite" type="Sprite2D" parent="PathFollow2D/BirdArea" unique_id=1681689416]
 modulate = Color(1, 0.5, 0, 0.7)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_icon")

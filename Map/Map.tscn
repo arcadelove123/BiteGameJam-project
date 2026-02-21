@@ -241,10 +241,12 @@ size = Vector2(204, 105.5)
 script = ExtResource("1_jq5q4")
 
 [node name="CameraLimiter2D" parent="." unique_id=549817282 instance=ExtResource("2_kmgy4")]
+position = Vector2(-2, 88)
+scale = Vector2(0.9408249, 1.0216888)
 
 [node name="Area2D" type="Area2D" parent="CameraLimiter2D" unique_id=1612250091]
 position = Vector2(1709, 3777)
-scale = Vector2(34.254284, 58.443916)
+scale = Vector2(34.87645, 60.69275)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CameraLimiter2D/Area2D" unique_id=285725569]
 position = Vector2(-30.337088, 4.194622)
@@ -252,8 +254,8 @@ scale = Vector2(2.7636733, 7.462441)
 shape = SubResource("RectangleShape2D_dpt0a")
 
 [node name="Area2D2" type="Area2D" parent="CameraLimiter2D" unique_id=1414098795]
-position = Vector2(4089, 8204)
-scale = Vector2(47.011208, 8.759753)
+position = Vector2(3964.6055, 8394.923)
+scale = Vector2(43.073795, 2.584718)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CameraLimiter2D/Area2D2" unique_id=1027656962]
 position = Vector2(-30.337088, 4.194622)
@@ -280,9 +282,12 @@ position = Vector2(271, 78)
 time = 1
 
 [node name="Main-character" parent="." unique_id=1231940662 instance=ExtResource("14_ehio4")]
+
+
 position = Vector2(-64, -110)
 
 [node name="LeftAreas" type="Node2D" parent="." unique_id=542322291]
+visible = false
 
 [node name="LeftArea" type="Area2D" parent="LeftAreas" unique_id=1824125216]
 position = Vector2(5, 0)
@@ -292,6 +297,7 @@ position = Vector2(392, 4306)
 shape = SubResource("RectangleShape2D_ehio4")
 
 [node name="RightAreas" type="Node2D" parent="." unique_id=1285696938]
+visible = false
 
 [node name="RightArea" type="Area2D" parent="RightAreas" unique_id=1490488221]
 
@@ -306,10 +312,12 @@ position = Vector2(1944, 8550)
 shape = SubResource("RectangleShape2D_bl6si")
 
 [node name="Light" parent="." unique_id=1053897446 instance=ExtResource("18_b3jsu")]
+visible = false
 position = Vector2(448.00003, 194.00002)
 scale = Vector2(3, 3)
 
 [node name="Rain" parent="." unique_id=927174176 instance=ExtResource("19_2q318")]
+visible = false
 position = Vector2(1466, -54)
 
 [node name="LeftCover" type="ColorRect" parent="." unique_id=1249541636]
@@ -334,6 +342,7 @@ offset_bottom = 9061.0
 color = Color(0, 0, 0, 0)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=784523845]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1151230287]
 position = Vector2(2526, 8707)
