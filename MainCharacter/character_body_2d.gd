@@ -50,7 +50,7 @@ var default_camera_limits := {
 
 func _ready():
 	recharge_sound = AudioStreamPlayer.new()
-	recharge_sound.stream = load("res://bam1.mp3")
+	recharge_sound.stream = load("res://audio-editor-output.mp3")
 	add_child(recharge_sound)
 	
 	add_to_group("player")
@@ -95,8 +95,6 @@ func _physics_process(delta):
 
 	if dash_cooldown_timer > 0:
 		dash_cooldown_timer -= delta
-		if dash_cooldown_timer <= 0:
-			recharge_sound.play()
 		if dash_indicator:
 			dash_indicator.value = dash_cooldown - dash_cooldown_timer
 	
@@ -116,6 +114,7 @@ func _physics_process(delta):
 		dash_timer -= delta
 		var progress = 1.0 - (dash_timer / dash_duration)
 		$AnimatedSprite2D.rotation = progress * TAU * facing_direction
+		recharge_sound.play()
 		if dash_timer <= 0:
 			is_dashing = false
 			set_damage_ignore(&"dash", false)

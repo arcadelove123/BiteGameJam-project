@@ -280,11 +280,12 @@ position = Vector2(271, 78)
 time = 1
 
 [node name="Main-character" parent="." unique_id=1231940662 instance=ExtResource("14_ehio4")]
-position = Vector2(878, 8611)
+position = Vector2(-64, -110)
 
 [node name="LeftAreas" type="Node2D" parent="." unique_id=542322291]
 
 [node name="LeftArea" type="Area2D" parent="LeftAreas" unique_id=1824125216]
+position = Vector2(5, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftAreas/LeftArea" unique_id=1787592115]
 position = Vector2(392, 4306)
@@ -312,7 +313,6 @@ scale = Vector2(3, 3)
 position = Vector2(1466, -54)
 
 [node name="LeftCover" type="ColorRect" parent="." unique_id=1249541636]
-visible = false
 offset_left = -1515.0
 offset_top = -1198.0
 offset_right = 1047.0
@@ -320,7 +320,6 @@ offset_bottom = 8701.0
 color = Color(0, 0, 0, 1)
 
 [node name="RightCover" type="ColorRect" parent="." unique_id=847103182]
-visible = false
 offset_left = 1047.0
 offset_top = -1202.0
 offset_right = 1513.0
