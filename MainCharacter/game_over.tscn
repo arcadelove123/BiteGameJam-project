@@ -2,9 +2,13 @@
 
 [ext_resource type="Script" uid="uid://xkjgi0wco8ij" path="res://MainCharacter/game_over.gd" id="1_rftea"]
 [ext_resource type="Texture2D" uid="uid://d3o2tdolip7bj" path="res://Assets/wasted (1).png" id="2_ootcb"]
-[ext_resource type="Texture2D" uid="uid://dyvvctcc7w0d0" path="res://Assets/retry.png" id="3_8sere"]
+[ext_resource type="Texture2D" uid="uid://dwajys183nc0t" path="res://retry2.png" id="3_nq2ra"]
+[ext_resource type="Texture2D" uid="uid://crc0khx48k6fv" path="res://Scenes/option 2.png" id="4_nq2ra"]
 [ext_resource type="Texture2D" uid="uid://db45l8vkuxws" path="res://Assets/leaf.png" id="4_qul20"]
+[ext_resource type="Texture2D" uid="uid://d2bvlfdu4cm00" path="res://option.png" id="5_mqtkr"]
 [ext_resource type="Script" uid="uid://c20cbydeseg8j" path="res://Scenes/h_slider.gd" id="5_nq2ra"]
+[ext_resource type="Texture2D" uid="uid://clx6trywyhfmr" path="res://mute.png" id="8_lfskl"]
+[ext_resource type="Texture2D" uid="uid://cqnidtvwgwfyr" path="res://full screen.png" id="9_c5yid"]
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_uw1bl"]
 color = Color(2.0094587e-06, 0.46288532, 0, 1)
@@ -43,6 +47,7 @@ scale = Vector2(8, 8)
 texture = ExtResource("2_ootcb")
 
 [node name="Button" type="Button" parent="." unique_id=1671873743]
+self_modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 1006.0
 offset_top = 32.0
@@ -54,18 +59,32 @@ expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="Button" unique_id=563406705]
 layout_mode = 0
-offset_left = -21.0
-offset_top = -58.0
-offset_right = 144.0
-offset_bottom = 95.0
-texture = ExtResource("3_8sere")
+offset_left = -8.000001
+offset_top = -46.999996
+offset_right = 157.0
+offset_bottom = 106.0
+scale = Vector2(0.83866155, 0.83866155)
+texture = ExtResource("3_nq2ra")
 
 [node name="Button2" type="Button" parent="." unique_id=315192293]
-offset_left = 1038.0
+self_modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+offset_left = 1000.0
 offset_top = 103.0
-offset_right = 1100.0
-offset_bottom = 134.0
-text = "Option"
+offset_right = 1062.0
+offset_bottom = 151.0
+scale = Vector2(2.162374, 1.0139233)
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="Button2" unique_id=709801684]
+layout_mode = 0
+offset_left = -1.3873727
+offset_top = -54.24474
+offset_right = 38.61263
+offset_bottom = -14.24474
+scale = Vector2(1.6675423, 3.5976322)
+texture = ExtResource("4_nq2ra")
 
 [node name="Panel" type="Panel" parent="." unique_id=1474285744]
 process_mode = 3
@@ -82,18 +101,15 @@ offset_bottom = 190.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="Panel" unique_id=582720021]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -61.0
-offset_top = 17.0
-offset_right = 61.0
-offset_bottom = 62.0
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 32
-text = "Options"
+[node name="TextureRect" type="TextureRect" parent="Panel" unique_id=231904795]
+texture_filter = 1
+layout_mode = 0
+offset_left = 132.0
+offset_top = -79.5
+offset_right = 182.0
+offset_bottom = -29.5
+scale = Vector2(4.697753, 4.697753)
+texture = ExtResource("5_mqtkr")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1587690407]
 layout_mode = 1
@@ -126,13 +142,14 @@ script = ExtResource("5_nq2ra")
 layout_mode = 2
 theme_override_constants/separation = 50
 
+[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer" unique_id=288437589]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("8_lfskl")
+
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/HBoxContainer" unique_id=835655714]
 layout_mode = 2
 theme_override_constants/separation = 20
-
-[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer/HBoxContainer" unique_id=845049047]
-layout_mode = 2
-text = "Muite"
 
 [node name="CheckButton" type="CheckButton" parent="Panel/VBoxContainer/HBoxContainer/HBoxContainer" unique_id=184840471]
 layout_mode = 2
@@ -142,9 +159,10 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_yehv6")
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="Label2" type="Label" parent="Panel/VBoxContainer/HBoxContainer/HBoxContainer2" unique_id=1841748273]
+[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer/HBoxContainer2" unique_id=457867305]
+texture_filter = 1
 layout_mode = 2
-text = "Full Screen"
+texture = ExtResource("9_c5yid")
 
 [node name="CheckButton2" type="CheckButton" parent="Panel/VBoxContainer/HBoxContainer/HBoxContainer2" unique_id=801665286]
 layout_mode = 2

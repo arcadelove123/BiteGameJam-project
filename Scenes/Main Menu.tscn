@@ -60,6 +60,11 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/hover = SubResource("StyleBoxFlat_ur25d")
 text = "Start"
 
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Button" unique_id=418538380]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=1263082024]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50

@@ -2,10 +2,7 @@ extends Node2D
 
 @export var bird_scene: PackedScene = preload("res://Bird/Bird.tscn")
 
-@export_group("Shooting Points")
-@export var start_node: Marker2D
-@export var target_node: Marker2D
-@export var fallback_target_offset: Vector2 = Vector2(500, 0)
+@export var flight_path: Path2D
 
 @export var cooldown: float = 2.0
 var can_shoot: bool = true
@@ -13,6 +10,12 @@ var can_shoot: bool = true
 func _ready():
 	if has_node("DetectionArea"):
 		$DetectionArea.body_entered.connect(_on_body_entered)
+
+	if not flight_path:
+		for child in get_children():
+			if child is Path2D:
+				flight_path = child
+				break
 
 func _on_body_entered(body):
 	if body.is_in_group("player") and can_shoot:
@@ -24,21 +27,17 @@ func start_cooldown():
 	get_tree().create_timer(cooldown).timeout.connect(func(): can_shoot = true)
 
 func shoot():
-	var from = global_position
-	if start_node:
-		from = start_node.global_position
-		
-	var to = from + fallback_target_offset
-	if target_node:
-		to = target_node.global_position
-		
-	_perform_shoot(from, to)
+	if not flight_path or not flight_path.curve or flight_path.curve.point_count < 2:
+		push_error("BirdSpawner: No valid flight path! Add a Path2D child with at least 2 curve points.")
+		return
+	_perform_shoot(flight_path.curve)
 
-func _perform_shoot(from: Vector2, to: Vector2):
+func _perform_shoot(path_curve: Curve2D):
 	if not bird_scene:
 		push_error("Bird scene not assigned to BirdSpawner!")
 		return
-		
+	
 	var bird = bird_scene.instantiate()
 	get_tree().current_scene.add_child(bird)
-	bird.setup(from, to)
+	bird.global_position = global_position
+	bird.setup_with_curve(path_curve)

@@ -1,14 +1,11 @@
 [gd_scene format=4 uid="uid://ips6qbsnxgeb"]
 
-[ext_resource type="PackedScene" uid="uid://oygouyc4coly" path="res://Camera/camera_limiter_2d.tscn" id="1_6xvmp"]
 [ext_resource type="Texture2D" uid="uid://ce38xs563mp5g" path="res://Assets/testTileset.png" id="1_r057v"]
 [ext_resource type="PackedScene" uid="uid://bmi1fl1udaa4m" path="res://background.tscn" id="1_yrugq"]
 [ext_resource type="PackedScene" uid="uid://bbgsjhur6fokm" path="res://MainCharacter/main_character.tscn" id="2_oemjb"]
 [ext_resource type="PackedScene" uid="uid://c8swoyikilgdo" path="res://Web/WebSpawner.tscn" id="3_ayjuu"]
 [ext_resource type="PackedScene" path="res://Bird/BirdSpawner.tscn" id="4_0w6td"]
 [ext_resource type="PackedScene" uid="uid://dxaao148m4pbp" path="res://Web/spider_web_shooter.tscn" id="4_65cun"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6xvmp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oemjb"]
 texture = ExtResource("1_r057v")
@@ -144,21 +141,13 @@ texture = ExtResource("1_r057v")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_oemjb")
 
+[sub_resource type="Curve2D" id="Curve2D_yrugq"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 70, -162, -114, -221, 114, 221, 195, -110, 0, 0, 0, 0, 300, -146, 0, 0, 0, 0, 107, -4)
+}
+point_count = 4
+
 [node name="TestMap" type="Node2D" unique_id=477279372]
-
-[node name="CameraLimiter2D" parent="." unique_id=313388639 node_paths=PackedStringArray("extra_areas") instance=ExtResource("1_6xvmp")]
-position = Vector2(610, 270)
-scale = Vector2(-2.1072211, 2.1523845)
-extra_areas = [NodePath("Area2D")]
-
-[node name="Area2D" type="Area2D" parent="CameraLimiter2D" unique_id=666310955]
-position = Vector2(285.6843, 50.64151)
-scale = Vector2(3.988928, 1.4398944)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CameraLimiter2D/Area2D" unique_id=1833195005]
-position = Vector2(-30.337088, 4.194622)
-scale = Vector2(2.7636733, 7.462441)
-shape = SubResource("RectangleShape2D_6xvmp")
 
 [node name="Background" parent="." unique_id=2018306294 instance=ExtResource("1_yrugq")]
 
@@ -177,10 +166,17 @@ offset_bottom = 40.0
 [node name="Main-character" parent="." unique_id=1231940662 instance=ExtResource("2_oemjb")]
 position = Vector2(322, 349)
 
-[node name="BirdSpawner" parent="." unique_id=1805191623 node_paths=PackedStringArray("start_node", "target_node") instance=ExtResource("4_0w6td")]
+[node name="BirdSpawner" parent="." unique_id=1805191623 node_paths=PackedStringArray("flight_path") instance=ExtResource("4_0w6td")]
 position = Vector2(217, 561)
-start_node = NodePath("Marker2D2")
-target_node = NodePath("Marker2D")
+flight_path = NodePath("Path2D")
+
+[node name="Path2D" type="Path2D" parent="BirdSpawner" unique_id=733859705]
+position = Vector2(33, -54)
+curve = SubResource("Curve2D_yrugq")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="BirdSpawner/Path2D" unique_id=806272676]
+position = Vector2(70, -162)
+rotation = -1.5057993
 
 [node name="Marker2D" type="Marker2D" parent="BirdSpawner" unique_id=513933497]
 position = Vector2(122, 32)

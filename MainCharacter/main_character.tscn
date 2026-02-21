@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://yktnq7nb23dn" path="res://MainCharacter/game_over.tscn" id="4_yymgt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2q423"]
-size = Vector2(20, 7.390451)
+size = Vector2(18.476128, 5.542838)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bykjv"]
 atlas = ExtResource("2_b1h05")
@@ -131,9 +131,10 @@ animations = [{
 script = ExtResource("1_wmkwl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1806324350]
-position = Vector2(0, 3)
+position = Vector2(0, 4.5)
 scale = Vector2(1.623717, 1.623717)
 shape = SubResource("RectangleShape2D_2q423")
+debug_color = Color(0.9889776, 0, 0.3011521, 0.41960785)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=882260067]
 texture_filter = 1
