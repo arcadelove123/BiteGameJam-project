@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://dox6i7jirfnhl" path="res://Event/ash.tscn" id="17_t64y5"]
 [ext_resource type="PackedScene" uid="uid://c7uxmn56y8mef" path="res://Event/light.tscn" id="18_b3jsu"]
 [ext_resource type="PackedScene" uid="uid://cvffhwr55x077" path="res://Event/rain.tscn" id="19_2q318"]
+[ext_resource type="PackedScene" uid="uid://dr2sgqe3xtott" path="res://Web/web_on_ground.tscn" id="19_dpt0a"]
 [ext_resource type="PackedScene" uid="uid://cq3ac747ytvrq" path="res://Event/waterdrop.tscn" id="21_kmgy4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dpt0a"]
@@ -247,7 +248,7 @@ scale = Vector2(0.9408249, 1.0216888)
 extra_areas = [NodePath("Area2D"), NodePath("Area2D2")]
 
 [node name="Area2D" type="Area2D" parent="CameraLimiter2D" unique_id=1612250091]
-position = Vector2(1662.371, 4586.5244)
+position = Vector2(1662.371, 4603.164)
 scale = Vector2(34.87645, 60.69275)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CameraLimiter2D/Area2D" unique_id=285725569]
@@ -824,6 +825,357 @@ time = 1
 [node name="Ash136" parent="Ashes" unique_id=1425272872 instance=ExtResource("17_t64y5")]
 position = Vector2(887, 8653)
 time = 1
+
+[node name="Spiderwebs" type="Node2D" parent="." unique_id=261368580]
+position = Vector2(-1, 0)
+
+[node name="web-on-ground" parent="Spiderwebs" unique_id=2008654719 instance=ExtResource("19_dpt0a")]
+position = Vector2(852, 243)
+
+[node name="web-on-ground4" parent="Spiderwebs" unique_id=1513385698 instance=ExtResource("19_dpt0a")]
+position = Vector2(931.00006, 243.00002)
+
+[node name="web-on-ground5" parent="Spiderwebs" unique_id=123907548 instance=ExtResource("19_dpt0a")]
+position = Vector2(175.00006, 403)
+
+[node name="web-on-ground7" parent="Spiderwebs" unique_id=605757005 instance=ExtResource("19_dpt0a")]
+position = Vector2(-108.99997, 515)
+
+[node name="web-on-ground6" parent="Spiderwebs" unique_id=1541800025 instance=ExtResource("19_dpt0a")]
+position = Vector2(549, 275)
+
+[node name="web-on-ground2" parent="Spiderwebs" unique_id=532540916 instance=ExtResource("19_dpt0a")]
+position = Vector2(560.00006, 180)
+
+[node name="web-on-ground3" parent="Spiderwebs" unique_id=1327033872 instance=ExtResource("19_dpt0a")]
+position = Vector2(272, 85.00001)
+
+[node name="web-on-ground8" parent="Spiderwebs" unique_id=1346058986 instance=ExtResource("19_dpt0a")]
+position = Vector2(876, 771.00006)
+
+[node name="web-on-ground9" parent="Spiderwebs" unique_id=937398353 instance=ExtResource("19_dpt0a")]
+position = Vector2(955.00006, 771.00006)
+
+[node name="web-on-ground10" parent="Spiderwebs" unique_id=1944092204 instance=ExtResource("19_dpt0a")]
+position = Vector2(199.00003, 931.00006)
+
+[node name="web-on-ground11" parent="Spiderwebs" unique_id=1075980868 instance=ExtResource("19_dpt0a")]
+position = Vector2(-85, 1043)
+
+[node name="web-on-ground12" parent="Spiderwebs" unique_id=230437563 instance=ExtResource("19_dpt0a")]
+position = Vector2(573, 803.00006)
+
+[node name="web-on-ground13" parent="Spiderwebs" unique_id=1578347304 instance=ExtResource("19_dpt0a")]
+position = Vector2(584.00006, 708.00006)
+
+[node name="web-on-ground14" parent="Spiderwebs" unique_id=2073773197 instance=ExtResource("19_dpt0a")]
+position = Vector2(295.99997, 613.00006)
+
+[node name="web-on-ground15" parent="Spiderwebs" unique_id=865915585 instance=ExtResource("19_dpt0a")]
+position = Vector2(855, 1299)
+
+[node name="web-on-ground16" parent="Spiderwebs" unique_id=107015435 instance=ExtResource("19_dpt0a")]
+position = Vector2(934.00006, 1299)
+
+[node name="web-on-ground17" parent="Spiderwebs" unique_id=388511729 instance=ExtResource("19_dpt0a")]
+position = Vector2(178.00003, 1459)
+
+[node name="web-on-ground18" parent="Spiderwebs" unique_id=927520008 instance=ExtResource("19_dpt0a")]
+position = Vector2(-106, 1571)
+
+[node name="web-on-ground19" parent="Spiderwebs" unique_id=1628484219 instance=ExtResource("19_dpt0a")]
+position = Vector2(552, 1331)
+
+[node name="web-on-ground20" parent="Spiderwebs" unique_id=813317713 instance=ExtResource("19_dpt0a")]
+position = Vector2(563.00006, 1236)
+
+[node name="web-on-ground21" parent="Spiderwebs" unique_id=1216257762 instance=ExtResource("19_dpt0a")]
+position = Vector2(274.99997, 1141)
+
+[node name="web-on-ground22" parent="Spiderwebs" unique_id=532987523 instance=ExtResource("19_dpt0a")]
+position = Vector2(869, 1827)
+
+[node name="web-on-ground23" parent="Spiderwebs" unique_id=218900384 instance=ExtResource("19_dpt0a")]
+position = Vector2(948.00006, 1827)
+
+[node name="web-on-ground24" parent="Spiderwebs" unique_id=218877826 instance=ExtResource("19_dpt0a")]
+position = Vector2(192.00003, 1987)
+
+[node name="web-on-ground25" parent="Spiderwebs" unique_id=1914200293 instance=ExtResource("19_dpt0a")]
+position = Vector2(-92, 2099)
+
+[node name="web-on-ground26" parent="Spiderwebs" unique_id=1062408886 instance=ExtResource("19_dpt0a")]
+position = Vector2(566, 1859)
+
+[node name="web-on-ground27" parent="Spiderwebs" unique_id=81338239 instance=ExtResource("19_dpt0a")]
+position = Vector2(577.00006, 1764)
+
+[node name="web-on-ground28" parent="Spiderwebs" unique_id=401125905 instance=ExtResource("19_dpt0a")]
+position = Vector2(288.99997, 1669)
+
+[node name="web-on-ground29" parent="Spiderwebs" unique_id=428057421 instance=ExtResource("19_dpt0a")]
+position = Vector2(843, 2355.0002)
+
+[node name="web-on-ground30" parent="Spiderwebs" unique_id=186515689 instance=ExtResource("19_dpt0a")]
+position = Vector2(922.00006, 2355.0002)
+
+[node name="web-on-ground31" parent="Spiderwebs" unique_id=1231575407 instance=ExtResource("19_dpt0a")]
+position = Vector2(166.00003, 2515.0002)
+
+[node name="web-on-ground32" parent="Spiderwebs" unique_id=61952955 instance=ExtResource("19_dpt0a")]
+position = Vector2(-117.999985, 2627.0002)
+
+[node name="web-on-ground33" parent="Spiderwebs" unique_id=2051751142 instance=ExtResource("19_dpt0a")]
+position = Vector2(540, 2387.0002)
+
+[node name="web-on-ground34" parent="Spiderwebs" unique_id=334672182 instance=ExtResource("19_dpt0a")]
+position = Vector2(551.00006, 2292.0002)
+
+[node name="web-on-ground35" parent="Spiderwebs" unique_id=162578946 instance=ExtResource("19_dpt0a")]
+position = Vector2(262.99997, 2197.0002)
+
+[node name="web-on-ground36" parent="Spiderwebs" unique_id=739783946 instance=ExtResource("19_dpt0a")]
+position = Vector2(873, 2883)
+
+[node name="web-on-ground37" parent="Spiderwebs" unique_id=1360177972 instance=ExtResource("19_dpt0a")]
+position = Vector2(952.00006, 2883)
+
+[node name="web-on-ground38" parent="Spiderwebs" unique_id=66543733 instance=ExtResource("19_dpt0a")]
+position = Vector2(196.00002, 3043)
+
+[node name="web-on-ground39" parent="Spiderwebs" unique_id=645514204 instance=ExtResource("19_dpt0a")]
+position = Vector2(-88, 3155)
+
+[node name="web-on-ground40" parent="Spiderwebs" unique_id=1917389969 instance=ExtResource("19_dpt0a")]
+position = Vector2(570, 2915)
+
+[node name="web-on-ground41" parent="Spiderwebs" unique_id=2001891389 instance=ExtResource("19_dpt0a")]
+position = Vector2(581.00006, 2820)
+
+[node name="web-on-ground42" parent="Spiderwebs" unique_id=1698497812 instance=ExtResource("19_dpt0a")]
+position = Vector2(292.99994, 2725)
+
+[node name="web-on-ground43" parent="Spiderwebs" unique_id=1142726388 instance=ExtResource("19_dpt0a")]
+position = Vector2(862, 3411)
+
+[node name="web-on-ground44" parent="Spiderwebs" unique_id=1828589922 instance=ExtResource("19_dpt0a")]
+position = Vector2(941, 3411)
+
+[node name="web-on-ground45" parent="Spiderwebs" unique_id=1706258972 instance=ExtResource("19_dpt0a")]
+position = Vector2(185.00005, 3571)
+
+[node name="web-on-ground46" parent="Spiderwebs" unique_id=1457356338 instance=ExtResource("19_dpt0a")]
+position = Vector2(-98.999985, 3683)
+
+[node name="web-on-ground47" parent="Spiderwebs" unique_id=36140092 instance=ExtResource("19_dpt0a")]
+position = Vector2(559, 3443)
+
+[node name="web-on-ground48" parent="Spiderwebs" unique_id=1110277703 instance=ExtResource("19_dpt0a")]
+position = Vector2(570, 3348)
+
+[node name="web-on-ground49" parent="Spiderwebs" unique_id=979906433 instance=ExtResource("19_dpt0a")]
+position = Vector2(281.99997, 3253)
+
+[node name="web-on-ground50" parent="Spiderwebs" unique_id=1619500745 instance=ExtResource("19_dpt0a")]
+position = Vector2(886, 3939)
+
+[node name="web-on-ground51" parent="Spiderwebs" unique_id=1617608989 instance=ExtResource("19_dpt0a")]
+position = Vector2(965, 3939)
+
+[node name="web-on-ground52" parent="Spiderwebs" unique_id=874086670 instance=ExtResource("19_dpt0a")]
+position = Vector2(209.00002, 4099)
+
+[node name="web-on-ground53" parent="Spiderwebs" unique_id=1351495155 instance=ExtResource("19_dpt0a")]
+position = Vector2(-75.000015, 4211)
+
+[node name="web-on-ground54" parent="Spiderwebs" unique_id=1920343315 instance=ExtResource("19_dpt0a")]
+position = Vector2(583, 3971)
+
+[node name="web-on-ground55" parent="Spiderwebs" unique_id=1942001339 instance=ExtResource("19_dpt0a")]
+position = Vector2(594, 3876)
+
+[node name="web-on-ground56" parent="Spiderwebs" unique_id=1159050202 instance=ExtResource("19_dpt0a")]
+position = Vector2(305.99994, 3781)
+
+[node name="web-on-ground57" parent="Spiderwebs" unique_id=127370378 instance=ExtResource("19_dpt0a")]
+position = Vector2(865, 4467)
+
+[node name="web-on-ground58" parent="Spiderwebs" unique_id=509997509 instance=ExtResource("19_dpt0a")]
+position = Vector2(944, 4467)
+
+[node name="web-on-ground59" parent="Spiderwebs" unique_id=1694857549 instance=ExtResource("19_dpt0a")]
+position = Vector2(188.00002, 4627)
+
+[node name="web-on-ground60" parent="Spiderwebs" unique_id=2114389059 instance=ExtResource("19_dpt0a")]
+position = Vector2(-96.000015, 4739)
+
+[node name="web-on-ground61" parent="Spiderwebs" unique_id=1019471312 instance=ExtResource("19_dpt0a")]
+position = Vector2(562, 4499)
+
+[node name="web-on-ground62" parent="Spiderwebs" unique_id=2103264872 instance=ExtResource("19_dpt0a")]
+position = Vector2(573, 4404)
+
+[node name="web-on-ground63" parent="Spiderwebs" unique_id=2066061130 instance=ExtResource("19_dpt0a")]
+position = Vector2(284.99994, 4309)
+
+[node name="web-on-ground64" parent="Spiderwebs" unique_id=332233528 instance=ExtResource("19_dpt0a")]
+position = Vector2(879, 4995)
+
+[node name="web-on-ground65" parent="Spiderwebs" unique_id=1499503296 instance=ExtResource("19_dpt0a")]
+position = Vector2(958, 4995)
+
+[node name="web-on-ground66" parent="Spiderwebs" unique_id=2113409835 instance=ExtResource("19_dpt0a")]
+position = Vector2(202.00002, 5155)
+
+[node name="web-on-ground67" parent="Spiderwebs" unique_id=491921756 instance=ExtResource("19_dpt0a")]
+position = Vector2(-82.000015, 5267)
+
+[node name="web-on-ground68" parent="Spiderwebs" unique_id=1895177497 instance=ExtResource("19_dpt0a")]
+position = Vector2(576, 5027)
+
+[node name="web-on-ground69" parent="Spiderwebs" unique_id=1495458317 instance=ExtResource("19_dpt0a")]
+position = Vector2(587, 4932)
+
+[node name="web-on-ground70" parent="Spiderwebs" unique_id=1102386826 instance=ExtResource("19_dpt0a")]
+position = Vector2(298.99994, 4837)
+
+[node name="web-on-ground71" parent="Spiderwebs" unique_id=105528673 instance=ExtResource("19_dpt0a")]
+position = Vector2(853, 5523)
+
+[node name="web-on-ground72" parent="Spiderwebs" unique_id=1311521406 instance=ExtResource("19_dpt0a")]
+position = Vector2(932, 5523)
+
+[node name="web-on-ground73" parent="Spiderwebs" unique_id=29521056 instance=ExtResource("19_dpt0a")]
+position = Vector2(176.00002, 5683)
+
+[node name="web-on-ground74" parent="Spiderwebs" unique_id=1616054940 instance=ExtResource("19_dpt0a")]
+position = Vector2(-108, 5795)
+
+[node name="web-on-ground75" parent="Spiderwebs" unique_id=264503644 instance=ExtResource("19_dpt0a")]
+position = Vector2(550, 5555)
+
+[node name="web-on-ground76" parent="Spiderwebs" unique_id=1573562128 instance=ExtResource("19_dpt0a")]
+position = Vector2(561, 5460)
+
+[node name="web-on-ground77" parent="Spiderwebs" unique_id=1358345024 instance=ExtResource("19_dpt0a")]
+position = Vector2(272.99994, 5365)
+
+[node name="web-on-ground78" parent="Spiderwebs" unique_id=1808835737 instance=ExtResource("19_dpt0a")]
+position = Vector2(883, 6051)
+
+[node name="web-on-ground79" parent="Spiderwebs" unique_id=803315250 instance=ExtResource("19_dpt0a")]
+position = Vector2(962, 6051)
+
+[node name="web-on-ground80" parent="Spiderwebs" unique_id=158516962 instance=ExtResource("19_dpt0a")]
+position = Vector2(206.00002, 6211)
+
+[node name="web-on-ground81" parent="Spiderwebs" unique_id=1704197148 instance=ExtResource("19_dpt0a")]
+position = Vector2(-78.000015, 6323)
+
+[node name="web-on-ground82" parent="Spiderwebs" unique_id=1909387956 instance=ExtResource("19_dpt0a")]
+position = Vector2(580, 6083)
+
+[node name="web-on-ground83" parent="Spiderwebs" unique_id=219441284 instance=ExtResource("19_dpt0a")]
+position = Vector2(591, 5988)
+
+[node name="web-on-ground84" parent="Spiderwebs" unique_id=898963066 instance=ExtResource("19_dpt0a")]
+position = Vector2(302.9999, 5893)
+
+[node name="web-on-ground85" parent="Spiderwebs" unique_id=728288760 instance=ExtResource("19_dpt0a")]
+position = Vector2(855, 6579)
+
+[node name="web-on-ground86" parent="Spiderwebs" unique_id=1820636269 instance=ExtResource("19_dpt0a")]
+position = Vector2(934, 6579)
+
+[node name="web-on-ground87" parent="Spiderwebs" unique_id=1542588208 instance=ExtResource("19_dpt0a")]
+position = Vector2(178.00005, 6739)
+
+[node name="web-on-ground88" parent="Spiderwebs" unique_id=423440419 instance=ExtResource("19_dpt0a")]
+position = Vector2(-105.999985, 6851)
+
+[node name="web-on-ground89" parent="Spiderwebs" unique_id=756462305 instance=ExtResource("19_dpt0a")]
+position = Vector2(552, 6611)
+
+[node name="web-on-ground90" parent="Spiderwebs" unique_id=1987520410 instance=ExtResource("19_dpt0a")]
+position = Vector2(563, 6516)
+
+[node name="web-on-ground91" parent="Spiderwebs" unique_id=651232876 instance=ExtResource("19_dpt0a")]
+position = Vector2(274.99994, 6421)
+
+[node name="web-on-ground92" parent="Spiderwebs" unique_id=1052747590 instance=ExtResource("19_dpt0a")]
+position = Vector2(879, 7107)
+
+[node name="web-on-ground93" parent="Spiderwebs" unique_id=2072699655 instance=ExtResource("19_dpt0a")]
+position = Vector2(958, 7107)
+
+[node name="web-on-ground94" parent="Spiderwebs" unique_id=526597018 instance=ExtResource("19_dpt0a")]
+position = Vector2(202.00002, 7267)
+
+[node name="web-on-ground95" parent="Spiderwebs" unique_id=1931531675 instance=ExtResource("19_dpt0a")]
+position = Vector2(-82.000015, 7379)
+
+[node name="web-on-ground96" parent="Spiderwebs" unique_id=1776813334 instance=ExtResource("19_dpt0a")]
+position = Vector2(576, 7139)
+
+[node name="web-on-ground97" parent="Spiderwebs" unique_id=212238239 instance=ExtResource("19_dpt0a")]
+position = Vector2(587, 7044)
+
+[node name="web-on-ground98" parent="Spiderwebs" unique_id=1663674339 instance=ExtResource("19_dpt0a")]
+position = Vector2(298.99994, 6949)
+
+[node name="web-on-ground99" parent="Spiderwebs" unique_id=1354802654 instance=ExtResource("19_dpt0a")]
+position = Vector2(858, 7635)
+
+[node name="web-on-ground100" parent="Spiderwebs" unique_id=1727409264 instance=ExtResource("19_dpt0a")]
+position = Vector2(937, 7635)
+
+[node name="web-on-ground101" parent="Spiderwebs" unique_id=712578252 instance=ExtResource("19_dpt0a")]
+position = Vector2(181.00002, 7795)
+
+[node name="web-on-ground102" parent="Spiderwebs" unique_id=1036779961 instance=ExtResource("19_dpt0a")]
+position = Vector2(-103.000015, 7907)
+
+[node name="web-on-ground103" parent="Spiderwebs" unique_id=210430696 instance=ExtResource("19_dpt0a")]
+position = Vector2(555, 7667)
+
+[node name="web-on-ground104" parent="Spiderwebs" unique_id=772121069 instance=ExtResource("19_dpt0a")]
+position = Vector2(566, 7572)
+
+[node name="web-on-ground105" parent="Spiderwebs" unique_id=1350911692 instance=ExtResource("19_dpt0a")]
+position = Vector2(277.99994, 7477)
+
+[node name="web-on-ground106" parent="Spiderwebs" unique_id=1500139930 instance=ExtResource("19_dpt0a")]
+position = Vector2(872, 8163)
+
+[node name="web-on-ground107" parent="Spiderwebs" unique_id=762575419 instance=ExtResource("19_dpt0a")]
+position = Vector2(951, 8163)
+
+[node name="web-on-ground108" parent="Spiderwebs" unique_id=275768275 instance=ExtResource("19_dpt0a")]
+position = Vector2(195.00002, 8323)
+
+[node name="web-on-ground109" parent="Spiderwebs" unique_id=1901476321 instance=ExtResource("19_dpt0a")]
+position = Vector2(-89.000015, 8435)
+
+[node name="web-on-ground110" parent="Spiderwebs" unique_id=2076117308 instance=ExtResource("19_dpt0a")]
+position = Vector2(569, 8195)
+
+[node name="web-on-ground111" parent="Spiderwebs" unique_id=374166686 instance=ExtResource("19_dpt0a")]
+position = Vector2(580, 8100)
+
+[node name="web-on-ground112" parent="Spiderwebs" unique_id=1693136559 instance=ExtResource("19_dpt0a")]
+position = Vector2(291.99994, 8005)
+
+[node name="web-on-ground113" parent="Spiderwebs" unique_id=493587791 instance=ExtResource("19_dpt0a")]
+position = Vector2(776.00006, 8659.001)
+
+[node name="web-on-ground114" parent="Spiderwebs" unique_id=489513652 instance=ExtResource("19_dpt0a")]
+position = Vector2(933, 8659.001)
+
+[node name="web-on-ground118" parent="Spiderwebs" unique_id=344678235 instance=ExtResource("19_dpt0a")]
+position = Vector2(554, 8628)
+
+[node name="web-on-ground119" parent="Spiderwebs" unique_id=292716077 instance=ExtResource("19_dpt0a")]
+position = Vector2(265.99994, 8533)
 
 [node name="Lights" type="Node2D" parent="." unique_id=1956071443]
 
