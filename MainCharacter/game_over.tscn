@@ -4,13 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://d3o2tdolip7bj" path="res://Assets/wasted (1).png" id="2_ootcb"]
 [ext_resource type="Texture2D" uid="uid://dwajys183nc0t" path="res://retry2.png" id="3_nq2ra"]
 [ext_resource type="Texture2D" uid="uid://crc0khx48k6fv" path="res://Scenes/option 2.png" id="4_nq2ra"]
-[ext_resource type="Texture2D" uid="uid://db45l8vkuxws" path="res://Assets/leaf.png" id="4_qul20"]
+[ext_resource type="Texture2D" uid="uid://bsee8x5dus2mu" path="res://Assets/option.png" id="5_lfskl"]
 [ext_resource type="Script" uid="uid://c20cbydeseg8j" path="res://Scenes/h_slider.gd" id="5_nq2ra"]
-[ext_resource type="Texture2D" uid="uid://clx6trywyhfmr" path="res://mute.png" id="8_lfskl"]
-[ext_resource type="Texture2D" uid="uid://cqnidtvwgwfyr" path="res://full screen.png" id="9_c5yid"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yehv6"]
-load_path = "res://.godot/imported/option.png-f7186c3eaabb8d223f81062551e90854.ctex"
+[ext_resource type="Texture2D" uid="uid://b2l8daukjm063" path="res://Assets/leaf real.png" id="6_lfskl"]
+[ext_resource type="Texture2D" uid="uid://yfipoivdrhs7" path="res://Assets/muteresized.png" id="8_mqtkr"]
+[ext_resource type="Texture2D" uid="uid://kc2yigqax1gr" path="res://Assets/full_screenresized.png" id="9_lfskl"]
+[ext_resource type="Texture2D" uid="uid://84muif8xq7lx" path="res://Assets/go back.png" id="9_mqtkr"]
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_uw1bl"]
 color = Color(2.0094587e-06, 0.46288532, 0, 1)
@@ -71,26 +70,25 @@ texture = ExtResource("3_nq2ra")
 [node name="Button2" type="Button" parent="." unique_id=315192293]
 self_modulate = Color(1, 1, 1, 0)
 texture_filter = 1
-offset_left = 1000.0
-offset_top = 134.0
-offset_right = 1062.0
-offset_bottom = 196.0
+offset_left = 823.0
+offset_top = 36.0
+offset_right = 885.0
+offset_bottom = 98.0
 scale = Vector2(2.162, 0.5)
 icon_alignment = 1
 expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="Button2" unique_id=709801684]
 layout_mode = 0
-offset_left = -79.55597
-offset_top = -324.0
-offset_right = -39.55597
-offset_bottom = -284.0
+offset_left = 2.3126678
+offset_top = -125.99999
+offset_right = 42.312668
+offset_bottom = -85.99999
 scale = Vector2(1.668, 7)
 texture = ExtResource("4_nq2ra")
 
 [node name="Panel" type="Panel" parent="." unique_id=1474285744]
 process_mode = 3
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -111,7 +109,7 @@ offset_top = -79.5
 offset_right = 182.0
 offset_bottom = -29.5
 scale = Vector2(4.697753, 4.697753)
-texture = SubResource("CompressedTexture2D_yehv6")
+texture = ExtResource("5_lfskl")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1587690407]
 layout_mode = 1
@@ -131,9 +129,9 @@ theme_override_constants/separation = 60
 [node name="HSlider" type="HSlider" parent="Panel/VBoxContainer" unique_id=839432526]
 texture_filter = 1
 layout_mode = 2
-theme_override_icons/grabber = ExtResource("4_qul20")
-theme_override_icons/grabber_highlight = ExtResource("4_qul20")
-theme_override_icons/grabber_disabled = ExtResource("4_qul20")
+theme_override_icons/grabber = ExtResource("6_lfskl")
+theme_override_icons/grabber_highlight = ExtResource("6_lfskl")
+theme_override_icons/grabber_disabled = ExtResource("6_lfskl")
 theme_override_styles/slider = SubResource("StyleBoxLine_uw1bl")
 max_value = 1.0
 step = 0.001
@@ -147,7 +145,8 @@ theme_override_constants/separation = 50
 [node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer" unique_id=288437589]
 texture_filter = 1
 layout_mode = 2
-texture = ExtResource("8_lfskl")
+texture = ExtResource("8_mqtkr")
+expand_mode = 3
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/HBoxContainer" unique_id=835655714]
 layout_mode = 2
@@ -164,7 +163,8 @@ theme_override_constants/separation = 20
 [node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer/HBoxContainer2" unique_id=457867305]
 texture_filter = 1
 layout_mode = 2
-texture = ExtResource("9_c5yid")
+texture = ExtResource("9_lfskl")
+expand_mode = 3
 
 [node name="CheckButton2" type="CheckButton" parent="Panel/VBoxContainer/HBoxContainer/HBoxContainer2" unique_id=801665286]
 layout_mode = 2
@@ -173,7 +173,16 @@ layout_mode = 2
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_mqtkr")
-text = "Go Back"
+text = "      "
+
+[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/Button4" unique_id=1993979309]
+texture_filter = 1
+layout_mode = 0
+offset_left = 29.0
+offset_top = -78.0
+offset_right = 279.0
+offset_bottom = 172.0
+texture = ExtResource("9_mqtkr")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
