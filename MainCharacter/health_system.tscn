@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cd07w0q8y2oki"]
 
 [ext_resource type="Script" uid="uid://m1gurxyci8co" path="res://MainCharacter/health_system.gd" id="1_6i172"]
-[ext_resource type="Texture2D" uid="uid://db45l8vkuxws" path="res://Assets/leaf.png" id="2_6i172"]
+[ext_resource type="Texture2D" uid="uid://b2l8daukjm063" path="res://Assets/leaf real.png" id="2_6i172"]
 
 [node name="HealthSystem" type="CanvasLayer" unique_id=1772652342]
 script = ExtResource("1_6i172")
