@@ -325,9 +325,635 @@ time = 1
 position = Vector2(865, 765)
 time = 1
 
+[node name="Ash13" parent="Ashes" unique_id=322001734 instance=ExtResource("17_t64y5")]
+position = Vector2(467, 829)
+time = 1
+
+[node name="Ash15" parent="Ashes" unique_id=1229478696 instance=ExtResource("17_t64y5")]
+position = Vector2(276, 893)
+time = 1
+
+[node name="Ash16" parent="Ashes" unique_id=203028435 instance=ExtResource("17_t64y5")]
+position = Vector2(175, 925)
+time = 1
+
+[node name="Ash14" parent="Ashes" unique_id=308264715 instance=ExtResource("17_t64y5")]
+position = Vector2(118, 1069)
+time = 1
+
+[node name="Ash17" parent="Ashes" unique_id=1874684921 instance=ExtResource("17_t64y5")]
+position = Vector2(200, 1101)
+time = 1
+
+[node name="Ash20" parent="Ashes" unique_id=458572388 instance=ExtResource("17_t64y5")]
+position = Vector2(945, 1293)
+time = 1
+
+[node name="Ash21" parent="Ashes" unique_id=1847225100 instance=ExtResource("17_t64y5")]
+position = Vector2(468, 1357)
+time = 1
+
+[node name="Ash23" parent="Ashes" unique_id=983364906 instance=ExtResource("17_t64y5")]
+position = Vector2(86, 1485)
+time = 1
+
+[node name="Ash24" parent="Ashes" unique_id=357400520 instance=ExtResource("17_t64y5")]
+position = Vector2(722, 1293)
+time = 1
+
+[node name="Ash25" parent="Ashes" unique_id=551070458 instance=ExtResource("17_t64y5")]
+position = Vector2(-6, 1517)
+time = 1
+
+[node name="Ash22" parent="Ashes" unique_id=340646271 instance=ExtResource("17_t64y5")]
+position = Vector2(398, 1165)
+time = 1
+
+[node name="Ash18" parent="Ashes" unique_id=427150428 instance=ExtResource("17_t64y5")]
+position = Vector2(-5, 989)
+time = 1
+
+[node name="Ash19" parent="Ashes" unique_id=2053611305 instance=ExtResource("17_t64y5")]
+position = Vector2(6, 1037)
+time = 1
+
 [node name="Ash12" parent="Ashes" unique_id=626947699 instance=ExtResource("17_t64y5")]
 position = Vector2(109, 541)
 time = 1
+
+[node name="Ash26" parent="Ashes" unique_id=746867468 instance=ExtResource("17_t64y5")]
+position = Vector2(275, 1662)
+time = 1
+
+[node name="Ash27" parent="Ashes" unique_id=2066073118 instance=ExtResource("17_t64y5")]
+position = Vector2(369, 1694)
+time = 1
+
+[node name="Ash28" parent="Ashes" unique_id=1110470250 instance=ExtResource("17_t64y5")]
+position = Vector2(564, 1758)
+time = 1
+
+[node name="Ash29" parent="Ashes" unique_id=1354522146 instance=ExtResource("17_t64y5")]
+position = Vector2(896, 1822)
+time = 1
+
+[node name="Ash30" parent="Ashes" unique_id=1860217538 instance=ExtResource("17_t64y5")]
+position = Vector2(370, 1917)
+time = 1
+
+[node name="Ash31" parent="Ashes" unique_id=234677354 instance=ExtResource("17_t64y5")]
+position = Vector2(370, 1917)
+time = 1
+
+[node name="Ash32" parent="Ashes" unique_id=1511959328 instance=ExtResource("17_t64y5")]
+position = Vector2(278, 1949)
+time = 1
+
+[node name="Ash33" parent="Ashes" unique_id=959392723 instance=ExtResource("17_t64y5")]
+position = Vector2(-130, 2093)
+time = 1
+
+[node name="Ash34" parent="Ashes" unique_id=1909568809 instance=ExtResource("17_t64y5")]
+position = Vector2(89, 2013)
+time = 1
+
+[node name="Ash35" parent="Ashes" unique_id=1914149705 instance=ExtResource("17_t64y5")]
+position = Vector2(781, 2349)
+time = 1
+
+[node name="Ash36" parent="Ashes" unique_id=2035718507 instance=ExtResource("17_t64y5")]
+position = Vector2(869, 2349)
+time = 1
+
+[node name="Ash37" parent="Ashes" unique_id=1121147674 instance=ExtResource("17_t64y5")]
+position = Vector2(471, 2413)
+time = 1
+
+[node name="Ash38" parent="Ashes" unique_id=1227966008 instance=ExtResource("17_t64y5")]
+position = Vector2(280, 2477)
+time = 1
+
+[node name="Ash39" parent="Ashes" unique_id=362991885 instance=ExtResource("17_t64y5")]
+position = Vector2(179, 2509)
+time = 1
+
+[node name="Ash40" parent="Ashes" unique_id=1667802705 instance=ExtResource("17_t64y5")]
+position = Vector2(122, 2653)
+time = 1
+
+[node name="Ash41" parent="Ashes" unique_id=627418143 instance=ExtResource("17_t64y5")]
+position = Vector2(204, 2685)
+time = 1
+
+[node name="Ash42" parent="Ashes" unique_id=2130769119 instance=ExtResource("17_t64y5")]
+position = Vector2(949, 2877)
+time = 1
+
+[node name="Ash43" parent="Ashes" unique_id=1508279105 instance=ExtResource("17_t64y5")]
+position = Vector2(472, 2941)
+time = 1
+
+[node name="Ash44" parent="Ashes" unique_id=582178832 instance=ExtResource("17_t64y5")]
+position = Vector2(90, 3069)
+time = 1
+
+[node name="Ash45" parent="Ashes" unique_id=1659427873 instance=ExtResource("17_t64y5")]
+position = Vector2(726, 2877)
+time = 1
+
+[node name="Ash46" parent="Ashes" unique_id=1395910860 instance=ExtResource("17_t64y5")]
+position = Vector2(-2, 3101)
+time = 1
+
+[node name="Ash47" parent="Ashes" unique_id=1724136397 instance=ExtResource("17_t64y5")]
+position = Vector2(402, 2749)
+time = 1
+
+[node name="Ash48" parent="Ashes" unique_id=1153016780 instance=ExtResource("17_t64y5")]
+position = Vector2(-1, 2573)
+time = 1
+
+[node name="Ash49" parent="Ashes" unique_id=2028918142 instance=ExtResource("17_t64y5")]
+position = Vector2(10, 2621)
+time = 1
+
+[node name="Ash50" parent="Ashes" unique_id=1688094520 instance=ExtResource("17_t64y5")]
+position = Vector2(113, 2125)
+time = 1
+
+[node name="Ash51" parent="Ashes" unique_id=1032927937 instance=ExtResource("17_t64y5")]
+position = Vector2(287, 3246)
+time = 1
+
+[node name="Ash52" parent="Ashes" unique_id=902096126 instance=ExtResource("17_t64y5")]
+position = Vector2(381, 3278)
+time = 1
+
+[node name="Ash53" parent="Ashes" unique_id=865936218 instance=ExtResource("17_t64y5")]
+position = Vector2(576, 3342)
+time = 1
+
+[node name="Ash54" parent="Ashes" unique_id=274443025 instance=ExtResource("17_t64y5")]
+position = Vector2(908, 3406)
+time = 1
+
+[node name="Ash55" parent="Ashes" unique_id=1907529288 instance=ExtResource("17_t64y5")]
+position = Vector2(382, 3501)
+time = 1
+
+[node name="Ash56" parent="Ashes" unique_id=1900782339 instance=ExtResource("17_t64y5")]
+position = Vector2(382, 3501)
+time = 1
+
+[node name="Ash57" parent="Ashes" unique_id=1921845715 instance=ExtResource("17_t64y5")]
+position = Vector2(290, 3533)
+time = 1
+
+[node name="Ash58" parent="Ashes" unique_id=1239843723 instance=ExtResource("17_t64y5")]
+position = Vector2(-118, 3677)
+time = 1
+
+[node name="Ash59" parent="Ashes" unique_id=1839418157 instance=ExtResource("17_t64y5")]
+position = Vector2(101, 3597)
+time = 1
+
+[node name="Ash60" parent="Ashes" unique_id=73411603 instance=ExtResource("17_t64y5")]
+position = Vector2(793, 3933)
+time = 1
+
+[node name="Ash61" parent="Ashes" unique_id=1467877502 instance=ExtResource("17_t64y5")]
+position = Vector2(881, 3933)
+time = 1
+
+[node name="Ash62" parent="Ashes" unique_id=104334632 instance=ExtResource("17_t64y5")]
+position = Vector2(483, 3997)
+time = 1
+
+[node name="Ash63" parent="Ashes" unique_id=1759521034 instance=ExtResource("17_t64y5")]
+position = Vector2(292, 4061)
+time = 1
+
+[node name="Ash64" parent="Ashes" unique_id=782230659 instance=ExtResource("17_t64y5")]
+position = Vector2(191, 4093)
+time = 1
+
+[node name="Ash65" parent="Ashes" unique_id=1017469347 instance=ExtResource("17_t64y5")]
+position = Vector2(134, 4237)
+time = 1
+
+[node name="Ash66" parent="Ashes" unique_id=193670556 instance=ExtResource("17_t64y5")]
+position = Vector2(216, 4269)
+time = 1
+
+[node name="Ash67" parent="Ashes" unique_id=1083355277 instance=ExtResource("17_t64y5")]
+position = Vector2(961, 4461)
+time = 1
+
+[node name="Ash68" parent="Ashes" unique_id=1243447661 instance=ExtResource("17_t64y5")]
+position = Vector2(484, 4525)
+time = 1
+
+[node name="Ash69" parent="Ashes" unique_id=520662234 instance=ExtResource("17_t64y5")]
+position = Vector2(102, 4653)
+time = 1
+
+[node name="Ash70" parent="Ashes" unique_id=1380487294 instance=ExtResource("17_t64y5")]
+position = Vector2(738, 4461)
+time = 1
+
+[node name="Ash71" parent="Ashes" unique_id=549238733 instance=ExtResource("17_t64y5")]
+position = Vector2(10, 4685)
+time = 1
+
+[node name="Ash72" parent="Ashes" unique_id=739743866 instance=ExtResource("17_t64y5")]
+position = Vector2(414, 4333)
+time = 1
+
+[node name="Ash73" parent="Ashes" unique_id=1723740118 instance=ExtResource("17_t64y5")]
+position = Vector2(11, 4157)
+time = 1
+
+[node name="Ash74" parent="Ashes" unique_id=994218146 instance=ExtResource("17_t64y5")]
+position = Vector2(22, 4205)
+time = 1
+
+[node name="Ash75" parent="Ashes" unique_id=785082917 instance=ExtResource("17_t64y5")]
+position = Vector2(125, 3709)
+time = 1
+
+[node name="Ash76" parent="Ashes" unique_id=1936753303 instance=ExtResource("17_t64y5")]
+position = Vector2(275, 4830)
+time = 1
+
+[node name="Ash77" parent="Ashes" unique_id=3606734 instance=ExtResource("17_t64y5")]
+position = Vector2(369, 4862)
+time = 1
+
+[node name="Ash78" parent="Ashes" unique_id=1223564504 instance=ExtResource("17_t64y5")]
+position = Vector2(564, 4926)
+time = 1
+
+[node name="Ash79" parent="Ashes" unique_id=148456610 instance=ExtResource("17_t64y5")]
+position = Vector2(896, 4990)
+time = 1
+
+[node name="Ash80" parent="Ashes" unique_id=975994771 instance=ExtResource("17_t64y5")]
+position = Vector2(370, 5085)
+time = 1
+
+[node name="Ash81" parent="Ashes" unique_id=632870043 instance=ExtResource("17_t64y5")]
+position = Vector2(370, 5085)
+time = 1
+
+[node name="Ash82" parent="Ashes" unique_id=44241736 instance=ExtResource("17_t64y5")]
+position = Vector2(278, 5117)
+time = 1
+
+[node name="Ash83" parent="Ashes" unique_id=1540320937 instance=ExtResource("17_t64y5")]
+position = Vector2(-130, 5261)
+time = 1
+
+[node name="Ash84" parent="Ashes" unique_id=809698022 instance=ExtResource("17_t64y5")]
+position = Vector2(89, 5181)
+time = 1
+
+[node name="Ash85" parent="Ashes" unique_id=223648628 instance=ExtResource("17_t64y5")]
+position = Vector2(781, 5517)
+time = 1
+
+[node name="Ash86" parent="Ashes" unique_id=1896500657 instance=ExtResource("17_t64y5")]
+position = Vector2(869, 5517)
+time = 1
+
+[node name="Ash87" parent="Ashes" unique_id=2122197638 instance=ExtResource("17_t64y5")]
+position = Vector2(471, 5581)
+time = 1
+
+[node name="Ash88" parent="Ashes" unique_id=963805405 instance=ExtResource("17_t64y5")]
+position = Vector2(280, 5645)
+time = 1
+
+[node name="Ash89" parent="Ashes" unique_id=1709075315 instance=ExtResource("17_t64y5")]
+position = Vector2(179, 5677)
+time = 1
+
+[node name="Ash90" parent="Ashes" unique_id=922517940 instance=ExtResource("17_t64y5")]
+position = Vector2(122, 5821)
+time = 1
+
+[node name="Ash91" parent="Ashes" unique_id=236525080 instance=ExtResource("17_t64y5")]
+position = Vector2(204, 5853)
+time = 1
+
+[node name="Ash92" parent="Ashes" unique_id=372965873 instance=ExtResource("17_t64y5")]
+position = Vector2(949, 6045)
+time = 1
+
+[node name="Ash93" parent="Ashes" unique_id=969087264 instance=ExtResource("17_t64y5")]
+position = Vector2(472, 6109)
+time = 1
+
+[node name="Ash94" parent="Ashes" unique_id=268335532 instance=ExtResource("17_t64y5")]
+position = Vector2(90, 6237)
+time = 1
+
+[node name="Ash95" parent="Ashes" unique_id=587148858 instance=ExtResource("17_t64y5")]
+position = Vector2(726, 6045)
+time = 1
+
+[node name="Ash96" parent="Ashes" unique_id=1189600848 instance=ExtResource("17_t64y5")]
+position = Vector2(-2, 6269)
+time = 1
+
+[node name="Ash97" parent="Ashes" unique_id=778913156 instance=ExtResource("17_t64y5")]
+position = Vector2(402, 5917)
+time = 1
+
+[node name="Ash98" parent="Ashes" unique_id=703050627 instance=ExtResource("17_t64y5")]
+position = Vector2(-1, 5741)
+time = 1
+
+[node name="Ash99" parent="Ashes" unique_id=566825154 instance=ExtResource("17_t64y5")]
+position = Vector2(10, 5789)
+time = 1
+
+[node name="Ash100" parent="Ashes" unique_id=118833070 instance=ExtResource("17_t64y5")]
+position = Vector2(113, 5293)
+time = 1
+
+[node name="Ash101" parent="Ashes" unique_id=1058896538 instance=ExtResource("17_t64y5")]
+position = Vector2(271, 6414)
+time = 1
+
+[node name="Ash102" parent="Ashes" unique_id=1769830671 instance=ExtResource("17_t64y5")]
+position = Vector2(365, 6446)
+time = 1
+
+[node name="Ash103" parent="Ashes" unique_id=1276932889 instance=ExtResource("17_t64y5")]
+position = Vector2(560, 6510)
+time = 1
+
+[node name="Ash104" parent="Ashes" unique_id=2051240333 instance=ExtResource("17_t64y5")]
+position = Vector2(892, 6574)
+time = 1
+
+[node name="Ash105" parent="Ashes" unique_id=1360913630 instance=ExtResource("17_t64y5")]
+position = Vector2(366, 6669)
+time = 1
+
+[node name="Ash106" parent="Ashes" unique_id=948809947 instance=ExtResource("17_t64y5")]
+position = Vector2(366, 6669)
+time = 1
+
+[node name="Ash107" parent="Ashes" unique_id=353301186 instance=ExtResource("17_t64y5")]
+position = Vector2(274, 6701)
+time = 1
+
+[node name="Ash108" parent="Ashes" unique_id=74137863 instance=ExtResource("17_t64y5")]
+position = Vector2(-134, 6845)
+time = 1
+
+[node name="Ash109" parent="Ashes" unique_id=1281641953 instance=ExtResource("17_t64y5")]
+position = Vector2(85, 6765)
+time = 1
+
+[node name="Ash110" parent="Ashes" unique_id=590175114 instance=ExtResource("17_t64y5")]
+position = Vector2(777, 7101)
+time = 1
+
+[node name="Ash111" parent="Ashes" unique_id=1473815648 instance=ExtResource("17_t64y5")]
+position = Vector2(865, 7101)
+time = 1
+
+[node name="Ash112" parent="Ashes" unique_id=1658419479 instance=ExtResource("17_t64y5")]
+position = Vector2(467, 7165)
+time = 1
+
+[node name="Ash113" parent="Ashes" unique_id=1590293230 instance=ExtResource("17_t64y5")]
+position = Vector2(276, 7229)
+time = 1
+
+[node name="Ash114" parent="Ashes" unique_id=1767306086 instance=ExtResource("17_t64y5")]
+position = Vector2(175, 7261)
+time = 1
+
+[node name="Ash115" parent="Ashes" unique_id=1500691258 instance=ExtResource("17_t64y5")]
+position = Vector2(118, 7405)
+time = 1
+
+[node name="Ash116" parent="Ashes" unique_id=1272572120 instance=ExtResource("17_t64y5")]
+position = Vector2(200, 7437)
+time = 1
+
+[node name="Ash117" parent="Ashes" unique_id=212425131 instance=ExtResource("17_t64y5")]
+position = Vector2(945, 7629)
+time = 1
+
+[node name="Ash118" parent="Ashes" unique_id=1177089649 instance=ExtResource("17_t64y5")]
+position = Vector2(468, 7693)
+time = 1
+
+[node name="Ash119" parent="Ashes" unique_id=762652064 instance=ExtResource("17_t64y5")]
+position = Vector2(86, 7821)
+time = 1
+
+[node name="Ash120" parent="Ashes" unique_id=1017731717 instance=ExtResource("17_t64y5")]
+position = Vector2(722, 7629)
+time = 1
+
+[node name="Ash121" parent="Ashes" unique_id=1179031545 instance=ExtResource("17_t64y5")]
+position = Vector2(-6, 7853)
+time = 1
+
+[node name="Ash122" parent="Ashes" unique_id=1537596607 instance=ExtResource("17_t64y5")]
+position = Vector2(398, 7501)
+time = 1
+
+[node name="Ash123" parent="Ashes" unique_id=645887092 instance=ExtResource("17_t64y5")]
+position = Vector2(-5, 7325)
+time = 1
+
+[node name="Ash124" parent="Ashes" unique_id=673563071 instance=ExtResource("17_t64y5")]
+position = Vector2(6, 7373)
+time = 1
+
+[node name="Ash125" parent="Ashes" unique_id=1058641817 instance=ExtResource("17_t64y5")]
+position = Vector2(109, 6877)
+time = 1
+
+[node name="Ash126" parent="Ashes" unique_id=77396137 instance=ExtResource("17_t64y5")]
+position = Vector2(268, 7998)
+time = 1
+
+[node name="Ash127" parent="Ashes" unique_id=715629404 instance=ExtResource("17_t64y5")]
+position = Vector2(362, 8030)
+time = 1
+
+[node name="Ash128" parent="Ashes" unique_id=1034777060 instance=ExtResource("17_t64y5")]
+position = Vector2(557, 8094)
+time = 1
+
+[node name="Ash129" parent="Ashes" unique_id=1500640958 instance=ExtResource("17_t64y5")]
+position = Vector2(889, 8158)
+time = 1
+
+[node name="Ash130" parent="Ashes" unique_id=1411416799 instance=ExtResource("17_t64y5")]
+position = Vector2(363, 8253)
+time = 1
+
+[node name="Ash131" parent="Ashes" unique_id=1692817471 instance=ExtResource("17_t64y5")]
+position = Vector2(363, 8253)
+time = 1
+
+[node name="Ash132" parent="Ashes" unique_id=746696854 instance=ExtResource("17_t64y5")]
+position = Vector2(271, 8285)
+time = 1
+
+[node name="Ash133" parent="Ashes" unique_id=388701508 instance=ExtResource("17_t64y5")]
+position = Vector2(-137, 8429)
+time = 1
+
+[node name="Ash134" parent="Ashes" unique_id=360781575 instance=ExtResource("17_t64y5")]
+position = Vector2(82, 8349)
+time = 1
+
+[node name="Ash135" parent="Ashes" unique_id=1019850753 instance=ExtResource("17_t64y5")]
+position = Vector2(739, 8653)
+time = 1
+
+[node name="Ash136" parent="Ashes" unique_id=1425272872 instance=ExtResource("17_t64y5")]
+position = Vector2(887, 8653)
+time = 1
+
+[node name="Lights" type="Node2D" parent="." unique_id=1956071443]
+
+[node name="Light" parent="Lights" unique_id=1053897446 instance=ExtResource("18_b3jsu")]
+position = Vector2(448.00003, 194.00002)
+scale = Vector2(3, 3)
+
+[node name="Light2" parent="Lights" unique_id=1014030668 instance=ExtResource("18_b3jsu")]
+position = Vector2(478.00003, 722)
+scale = Vector2(3, 3)
+
+[node name="Light3" parent="Lights" unique_id=1264151948 instance=ExtResource("18_b3jsu")]
+position = Vector2(190, 978)
+scale = Vector2(3, 3)
+
+[node name="Light4" parent="Lights" unique_id=2096584547 instance=ExtResource("18_b3jsu")]
+position = Vector2(480, 1251)
+scale = Vector2(3, 3)
+
+[node name="Light5" parent="Lights" unique_id=377537905 instance=ExtResource("18_b3jsu")]
+position = Vector2(188, 1506)
+scale = Vector2(3, 3)
+
+[node name="Light6" parent="Lights" unique_id=2117942214 instance=ExtResource("18_b3jsu")]
+position = Vector2(193, 450)
+scale = Vector2(3, 3)
+
+[node name="Light7" parent="Lights" unique_id=1171943695 instance=ExtResource("18_b3jsu")]
+position = Vector2(453.00003, 1778)
+scale = Vector2(3, 3)
+
+[node name="Light8" parent="Lights" unique_id=2060124179 instance=ExtResource("18_b3jsu")]
+position = Vector2(483.00003, 2306)
+scale = Vector2(3, 3)
+
+[node name="Light9" parent="Lights" unique_id=1501699244 instance=ExtResource("18_b3jsu")]
+position = Vector2(195, 2562)
+scale = Vector2(3, 3)
+
+[node name="Light10" parent="Lights" unique_id=962686109 instance=ExtResource("18_b3jsu")]
+position = Vector2(485, 2835)
+scale = Vector2(3, 3)
+
+[node name="Light11" parent="Lights" unique_id=606890584 instance=ExtResource("18_b3jsu")]
+position = Vector2(193, 3090)
+scale = Vector2(3, 3)
+
+[node name="Light12" parent="Lights" unique_id=573806771 instance=ExtResource("18_b3jsu")]
+position = Vector2(198, 2034)
+scale = Vector2(3, 3)
+
+[node name="Light13" parent="Lights" unique_id=545599380 instance=ExtResource("18_b3jsu")]
+position = Vector2(449, 3362)
+scale = Vector2(3, 3)
+
+[node name="Light14" parent="Lights" unique_id=1507245702 instance=ExtResource("18_b3jsu")]
+position = Vector2(479, 3890)
+scale = Vector2(3, 3)
+
+[node name="Light15" parent="Lights" unique_id=1660134779 instance=ExtResource("18_b3jsu")]
+position = Vector2(191, 4146)
+scale = Vector2(3, 3)
+
+[node name="Light16" parent="Lights" unique_id=1903829345 instance=ExtResource("18_b3jsu")]
+position = Vector2(481, 4419)
+scale = Vector2(3, 3)
+
+[node name="Light17" parent="Lights" unique_id=2021448007 instance=ExtResource("18_b3jsu")]
+position = Vector2(189, 4674)
+scale = Vector2(3, 3)
+
+[node name="Light18" parent="Lights" unique_id=2113745537 instance=ExtResource("18_b3jsu")]
+position = Vector2(194, 3618)
+scale = Vector2(3, 3)
+
+[node name="Light19" parent="Lights" unique_id=1643841126 instance=ExtResource("18_b3jsu")]
+position = Vector2(452, 4946)
+scale = Vector2(3, 3)
+
+[node name="Light20" parent="Lights" unique_id=1464881980 instance=ExtResource("18_b3jsu")]
+position = Vector2(482, 5474)
+scale = Vector2(3, 3)
+
+[node name="Light21" parent="Lights" unique_id=1747807569 instance=ExtResource("18_b3jsu")]
+position = Vector2(194, 5730)
+scale = Vector2(3, 3)
+
+[node name="Light22" parent="Lights" unique_id=934180741 instance=ExtResource("18_b3jsu")]
+position = Vector2(484.00003, 6002)
+scale = Vector2(3, 3)
+
+[node name="Light23" parent="Lights" unique_id=654895906 instance=ExtResource("18_b3jsu")]
+position = Vector2(192, 6258)
+scale = Vector2(3, 3)
+
+[node name="Light24" parent="Lights" unique_id=1790600147 instance=ExtResource("18_b3jsu")]
+position = Vector2(197, 5202)
+scale = Vector2(3, 3)
+
+[node name="Light25" parent="Lights" unique_id=834941409 instance=ExtResource("18_b3jsu")]
+position = Vector2(451, 6530)
+scale = Vector2(3, 3)
+
+[node name="Light26" parent="Lights" unique_id=951490255 instance=ExtResource("18_b3jsu")]
+position = Vector2(481, 7058)
+scale = Vector2(3, 3)
+
+[node name="Light27" parent="Lights" unique_id=579796175 instance=ExtResource("18_b3jsu")]
+position = Vector2(193, 7314)
+scale = Vector2(3, 3)
+
+[node name="Light28" parent="Lights" unique_id=1638278321 instance=ExtResource("18_b3jsu")]
+position = Vector2(483, 7587)
+scale = Vector2(3, 3)
+
+[node name="Light29" parent="Lights" unique_id=1182347038 instance=ExtResource("18_b3jsu")]
+position = Vector2(191, 7842)
+scale = Vector2(3, 3)
+
+[node name="Light31" parent="Lights" unique_id=1557379611 instance=ExtResource("18_b3jsu")]
+position = Vector2(190, 8370)
+scale = Vector2(3, 3)
+
+[node name="Light33" parent="Lights" unique_id=1490884053 instance=ExtResource("18_b3jsu")]
+position = Vector2(477, 8114.0005)
+scale = Vector2(3, 3)
+
+[node name="Light30" parent="Lights" unique_id=690145623 instance=ExtResource("18_b3jsu")]
+position = Vector2(196, 6786)
+scale = Vector2(3, 3)
 
 [node name="Main-character" parent="." unique_id=1231940662 instance=ExtResource("14_ehio4")]
 position = Vector2(742, 190)
@@ -356,10 +982,6 @@ shape = SubResource("RectangleShape2D_7a0j3")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1296084412]
 position = Vector2(1944, 8550)
 shape = SubResource("RectangleShape2D_bl6si")
-
-[node name="Light" parent="." unique_id=1053897446 instance=ExtResource("18_b3jsu")]
-position = Vector2(448.00003, 194.00002)
-scale = Vector2(3, 3)
 
 [node name="Waterdrop" type="Node2D" parent="." unique_id=977309975]
 
