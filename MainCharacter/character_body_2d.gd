@@ -42,8 +42,8 @@ var camera_limit_sources: Dictionary = {}
 var camera_limit_sequence: int = 0
 var default_camera_limits := {
 	"enabled": true,
-	"left": -10000000,
-	"top": -10000000,
+	"left": - 10000000,
+	"top": - 10000000,
 	"right": 10000000,
 	"bottom": 10000000
 }
