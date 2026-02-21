@@ -23,7 +23,12 @@
 [ext_resource type="PackedScene" uid="uid://cvffhwr55x077" path="res://Event/rain.tscn" id="19_2q318"]
 [ext_resource type="PackedScene" uid="uid://dr2sgqe3xtott" path="res://Web/web_on_ground.tscn" id="19_dpt0a"]
 [ext_resource type="PackedScene" uid="uid://cq3ac747ytvrq" path="res://Event/waterdrop.tscn" id="21_kmgy4"]
+
 [ext_resource type="Texture2D" uid="uid://cdiiy30pejtay" path="res://wormhole1 (1).png" id="24_ck6e3"]
+
+[ext_resource type="PackedScene" path="res://Bird/BirdSpawner.tscn" id="24_ck6e3"]
+[ext_resource type="PackedScene" uid="uid://nawarmyed3vj" path="res://Human/HumanSpawner.tscn" id="25_7m04m"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dpt0a"]
 
@@ -239,6 +244,89 @@ size = Vector2(471, 9113)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bl6si"]
 size = Vector2(848, 20)
+
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8uph"]
+size = Vector2(204, 105.5)
+
+[sub_resource type="Curve2D" id="Curve2D_7m04m"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 198, -52, 0, 0, 0, 0, 122, -18, 0, 0, 0, 0, 49, -5, 0, 0, 0, 0, 21, -7, 0, 0, 0, 0, -8, -19, 0, 0, 0, 0, -56, -68, 0, 0, 0, 0, -101, -134, 0, 0, 0, 0, -153, -223)
+}
+point_count = 8
+
+[sub_resource type="Curve2D" id="Curve2D_rx05r"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 335, -78, 0, 0, 0, 0, 68, -80, 0, 0, 0, 0, -48, -79)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_tlvak"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -614, -16, -9.68, 0.96800005, 9.68, -0.96800005, -530, 31, -18.392, 5.8080006, 18.392, -5.8080006, -314, 15, 0, 0, 0, 0, -186, -61)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_4r87e"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 498, 14, 0, 0, 0, 0, 359, -60, 0, 0, 0, 0, 220, -118, 0, 0, 0, 0, 120, 19)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_u7bh7"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -465, 57, 0, 0, 0, 0, -18, -97)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_8x48j"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 385, -107, 10.912817, -9.353844, -10.912817, 9.353844, 248, -19, 12.471791, 0, -12.471791, 0, 26, -41, 0, 0, 0, 0, -126, -118)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_oaqmq"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -167, -167, 0, 0, 0, 0, -121, 74)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_elbhq"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 199, -144, 0, 0, 0, 0, -297, 11)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_riqoh"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -152, -146, 0, 0, 0, 0, 365, 46, 0, 0, 0, 0, 605, 51)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_c31by"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -779, 5, 0, 0, 0, 0, -526, 35, 0, 0, 0, 0, 268, -35)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_s8ygv"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 924, 136, 0, 0, 0, 0, 620, 135, 0, 0, 0, 0, 199, -4)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_xecfs"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 533, -179, 0, 0, 0, 0, 343, -28, 0, 0, 0, 0, 74, 16, 0, 0, 0, 0, -425, 45)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_4e4q7"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 313, -78, 0, 0, 0, 0, -95, -75)
+}
+point_count = 2
+
 
 [node name="Map" type="Node2D" unique_id=1644254592]
 script = ExtResource("1_jq5q4")
@@ -1325,7 +1413,9 @@ scale = Vector2(2.9071946, 2.9071946)
 texture = ExtResource("24_ck6e3")
 
 [node name="Main-character" parent="." unique_id=1231940662 instance=ExtResource("14_ehio4")]
+
 position = Vector2(2201, 8635)
+
 
 [node name="LeftAreas" type="Node2D" parent="." unique_id=542322291]
 visible = false
@@ -1804,7 +1894,136 @@ offset_right = 3586.0
 offset_bottom = 9020.0
 color = Color(0, 0, 0, 0)
 
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=784523845]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1151230287]
+position = Vector2(2526, 8707)
+shape = SubResource("RectangleShape2D_s8uph")
+
+[node name="BirdSpawner" parent="." unique_id=2031805476 node_paths=PackedStringArray("flight_path") instance=ExtResource("24_ck6e3")]
+position = Vector2(193, 57)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+bird_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="BirdSpawner" unique_id=755356260]
+position = Vector2(106, 3)
+curve = SubResource("Curve2D_7m04m")
+
+[node name="HumanSpawner" parent="." unique_id=295539555 node_paths=PackedStringArray("flight_path") instance=ExtResource("25_7m04m")]
+position = Vector2(681, 251)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+human_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="HumanSpawner" unique_id=1929413167]
+position = Vector2(1, -6)
+curve = SubResource("Curve2D_rx05r")
+
+[node name="BirdSpawner2" parent="." unique_id=1537148488 node_paths=PackedStringArray("flight_path") instance=ExtResource("24_ck6e3")]
+position = Vector2(430, 317)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+bird_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="BirdSpawner2" unique_id=91601150]
+curve = SubResource("Curve2D_tlvak")
+
+[node name="BirdSpawner3" parent="." unique_id=1598267632 node_paths=PackedStringArray("flight_path") instance=ExtResource("24_ck6e3")]
+position = Vector2(402, 646)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+bird_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="BirdSpawner3" unique_id=570055642]
+curve = SubResource("Curve2D_4r87e")
+
+[node name="HumanSpawner2" parent="." unique_id=379440807 node_paths=PackedStringArray("flight_path") instance=ExtResource("25_7m04m")]
+position = Vector2(369, 874)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+human_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="HumanSpawner2" unique_id=724844883]
+curve = SubResource("Curve2D_u7bh7")
+
+[node name="BirdSpawner4" parent="." unique_id=2069729588 node_paths=PackedStringArray("flight_path") instance=ExtResource("24_ck6e3")]
+position = Vector2(589, 1243)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+bird_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="BirdSpawner4" unique_id=1185353422]
+curve = SubResource("Curve2D_8x48j")
+
+[node name="BirdSpawner5" parent="." unique_id=1475424353 node_paths=PackedStringArray("flight_path") instance=ExtResource("24_ck6e3")]
+position = Vector2(152, 1459)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+bird_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="BirdSpawner5" unique_id=1384649968]
+curve = SubResource("Curve2D_oaqmq")
+
+[node name="HumanSpawner3" parent="." unique_id=1064531773 node_paths=PackedStringArray("flight_path") instance=ExtResource("25_7m04m")]
+position = Vector2(205, 1435)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+human_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="HumanSpawner3" unique_id=499100530]
+curve = SubResource("Curve2D_elbhq")
+
+[node name="HumanSpawner4" parent="." unique_id=2011866458 node_paths=PackedStringArray("flight_path") instance=ExtResource("25_7m04m")]
+position = Vector2(348, 1723)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+human_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="HumanSpawner4" unique_id=1912703624]
+curve = SubResource("Curve2D_riqoh")
+
+[node name="BirdSpawner6" parent="." unique_id=854618949 node_paths=PackedStringArray("flight_path") instance=ExtResource("24_ck6e3")]
+position = Vector2(734, 2358)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+bird_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="BirdSpawner6" unique_id=249092755]
+curve = SubResource("Curve2D_c31by")
+
+[node name="BirdSpawner7" parent="." unique_id=2132457494 node_paths=PackedStringArray("flight_path") instance=ExtResource("24_ck6e3")]
+position = Vector2(-56, 2639)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+bird_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="BirdSpawner7" unique_id=202677462]
+curve = SubResource("Curve2D_s8ygv")
+
+[node name="BirdSpawner8" parent="." unique_id=366173932 node_paths=PackedStringArray("flight_path") instance=ExtResource("24_ck6e3")]
+position = Vector2(346, 3267)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+bird_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="BirdSpawner8" unique_id=282487214]
+curve = SubResource("Curve2D_xecfs")
+
+[node name="HumanSpawner5" parent="." unique_id=1238215617 node_paths=PackedStringArray("flight_path") instance=ExtResource("25_7m04m")]
+position = Vector2(729, 3943)
+flight_path = NodePath("Path2D")
+cooldown = 10.0
+human_speed = 200.0
+
+[node name="Path2D" type="Path2D" parent="HumanSpawner5" unique_id=1918503123]
+curve = SubResource("Curve2D_4e4q7")
+
+
 [connection signal="body_entered" from="LeftAreas/LeftArea" to="." method="_on_left_area_body_entered"]
 [connection signal="body_exited" from="LeftAreas/LeftArea" to="." method="_on_left_area_body_exited"]
 [connection signal="body_entered" from="RightAreas/RightArea" to="." method="_on_right_area_body_entered"]
