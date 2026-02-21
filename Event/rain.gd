@@ -11,12 +11,18 @@ extends GPUParticles2D
 
 @onready var player = null
 @onready var warning: TextureRect = $TextureRect
+@onready var waterdrops = $"../Waterdrop".get_children()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	warning.modulate.a = 0.0
 	self.visibility_rect = Rect2(Vector2(-2000, -2000), Vector2(4000, 12000))
 	self.process_material.color.a = 0.0
+	for c in waterdrops:
+		if c is Area2D:
+			c.monitoring = false
+			c.monitorable = false
+			c.visible = false
 
 func fade(target_alpha: float, duration: float = 1.0):
 	var tween = create_tween()
@@ -60,6 +66,13 @@ func _on_timer_2_timeout() -> void:
 		return
 		
 	self.process_material.color.a = 1.0
+	for c in waterdrops:
+		if c is Area2D:
+			c.monitoring = true
+			c.monitorable = true
+			c.visible = true
+			c.anim.play("rain")
+			
 	$Timer3.start()
 	player.hpSystem.take_damage()
 
