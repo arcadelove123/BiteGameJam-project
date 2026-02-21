@@ -134,10 +134,12 @@ func _physics_process(delta):
 	if jump_attempt and jump_cooldown_timer <= 0:
 		if is_on_floor():
 			velocity.y = jump_velocity
+			$AnimatedSprite2D.play("Jump")
 			jump_cooldown_timer = jump_cooldown
 		elif is_on_wall_only():
 			velocity.y = jump_velocity
 			velocity.x = get_wall_normal().x * wall_jump_force
+			$AnimatedSprite2D.play("Jump")
 			jump_cooldown_timer = jump_cooldown
 
 	var direction = Input.get_axis("move_left", "move_right")
@@ -150,10 +152,17 @@ func _physics_process(delta):
 		velocity.x = direction * current_speed
 		facing_direction = sign(direction)
 		$AnimatedSprite2D.flip_h = facing_direction > 0
+	else:
+		velocity.x = move_toward(velocity.x, 0, current_speed)
+
+	# Animation selection
+	if not is_on_floor():
+		if $AnimatedSprite2D.animation != "Jump":
+			$AnimatedSprite2D.play("Jump")
+	elif direction != 0:
 		if $AnimatedSprite2D.animation != "roll" or not $AnimatedSprite2D.is_playing():
 			$AnimatedSprite2D.play("default")
 	else:
-		velocity.x = move_toward(velocity.x, 0, current_speed)
 		if $AnimatedSprite2D.animation != "roll" or not $AnimatedSprite2D.is_playing():
 			$AnimatedSprite2D.stop()
 
