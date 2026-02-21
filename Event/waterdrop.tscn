@@ -1,39 +1,59 @@
 [gd_scene format=3 uid="uid://cq3ac747ytvrq"]
 
 [ext_resource type="Script" uid="uid://bcpl1e72l31mc" path="res://Event/waterdrop.gd" id="1_1x5bd"]
-[ext_resource type="Texture2D" uid="uid://dfhksnbfe7m57" path="res://Assets/icon.svg" id="2_khrh1"]
+[ext_resource type="Texture2D" uid="uid://dmnc58arsfwp" path="res://Assets/sprite_sheet_water.png" id="2_1x5bd"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_pbav8"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_khrh1"]
+atlas = ExtResource("2_1x5bd")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbav8"]
+atlas = ExtResource("2_1x5bd")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2a32a"]
+atlas = ExtResource("2_1x5bd")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xv4nw"]
+atlas = ExtResource("2_1x5bd")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8e0li"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_khrh1")
+"texture": SubResource("AtlasTexture_khrh1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pbav8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2a32a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xv4nw")
 }],
 "loop": false,
-"name": &"default",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_khrh1")
-}],
-"loop": true,
-"name": &"droppped",
+"name": &"rain",
 "speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2a32a"]
+radius = 4.0
 
 [node name="Waterdrop" type="Area2D" unique_id=155347294]
 script = ExtResource("1_1x5bd")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1232743537]
-position = Vector2(-0.4999981, 0.5)
-scale = Vector2(0.2265625, 0.1484375)
-sprite_frames = SubResource("SpriteFrames_pbav8")
-autoplay = "default"
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=884120542]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_8e0li")
+animation = &"rain"
+frame = 3
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=212432720]
+position = Vector2(0, 12)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_2a32a")
 
