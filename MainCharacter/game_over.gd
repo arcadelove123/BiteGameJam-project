@@ -10,7 +10,6 @@ extends CanvasLayer
 
 var bus_index = AudioServer.get_bus_index("Master")
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	color_rect.color.a = 0.0
 	wasted.modulate.a = 0.0

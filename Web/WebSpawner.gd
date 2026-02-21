@@ -16,7 +16,7 @@ func shoot():
 	if target_node:
 		to = target_node.global_position
 		
-	_perform_shoot(from, to)
+	_perform_shoot(from, to, target_node)
 
 func shoot_at(global_target: Vector2):
 	var from = global_position
@@ -25,14 +25,14 @@ func shoot_at(global_target: Vector2):
 	
 	_perform_shoot(from, global_target)
 
-func _perform_shoot(from: Vector2, to: Vector2):
+func _perform_shoot(from: Vector2, to: Vector2, tracked_target: Node2D = null):
 	if not web_scene:
 		push_error("Web scene not assigned to WebSpawner!")
 		return
 		
 	var web = web_scene.instantiate()
 	get_tree().current_scene.add_child(web)
-	web.setup(from, to)
+	web.setup(from, to, tracked_target)
 
 func _input(event):
 	if OS.is_debug_build() and event is InputEventMouseButton and event.pressed:

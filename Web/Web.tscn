@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cm47nta6lxk3i"]
 
 [ext_resource type="Script" uid="uid://cl70vbxbf4t5c" path="res://Web/Web.gd" id="1_script"]
-[ext_resource type="Texture2D" uid="uid://dfhksnbfe7m57" path="res://Assets/icon.svg" id="2_icon"]
+[ext_resource type="Texture2D" uid="uid://buqb48u3ck670" path="res://web shot.png" id="2_3g2lw"]
 [ext_resource type="Texture2D" uid="uid://c2ls4kigciplc" path="res://spiderweb_warning.png" id="3_3g2lw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1"]
@@ -17,8 +17,10 @@ shape = SubResource("CircleShape2D_1")
 
 [node name="WebSprite" type="Sprite2D" parent="." unique_id=1359383689]
 modulate = Color(0.8, 0.9, 1, 1)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("2_icon")
+texture_filter = 1
+position = Vector2(-3, -9)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_3g2lw")
 
 [node name="WarningSprite" type="Sprite2D" parent="." unique_id=931306791]
 modulate = Color(1, 0, 0, 0.7)

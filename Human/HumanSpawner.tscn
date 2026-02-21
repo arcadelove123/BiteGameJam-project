@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://nawarmyed3vj"]
+
+[ext_resource type="Script" uid="uid://dt2ilgevkuvif" path="res://Human/HumanSpawner.gd" id="1_human_spawner_script"]
+
+[sub_resource type="Curve2D" id="Curve2D_flight"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 200, 0)
+}
+point_count = 2
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_detection"]
+radius = 60.0
+
+[node name="HumanSpawner" type="Node2D" unique_id=295539555]
+script = ExtResource("1_human_spawner_script")
+
+[node name="FlightPath" type="Path2D" parent="." unique_id=975039800]
+curve = SubResource("Curve2D_flight")
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=1966221199]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=467341669]
+shape = SubResource("CircleShape2D_detection")

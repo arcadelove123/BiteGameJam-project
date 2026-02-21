@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://b1scogwy05l3i"]
+
+[ext_resource type="Script" uid="uid://cla62ntekfjpu" path="res://Human/Human.gd" id="1_human_script"]
+[ext_resource type="Texture2D" uid="uid://dfhksnbfe7m57" path="res://Assets/icon.svg" id="2_icon"]
+[ext_resource type="Texture2D" uid="uid://c12g1mogogtc" path="res://Human/sprite_sheet_baby.png" id="2_iq8bu"]
+
+[sub_resource type="Curve2D" id="Curve2D_default"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_human"]
+radius = 20.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sfvm6"]
+atlas = ExtResource("2_iq8bu")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jjsvy"]
+atlas = ExtResource("2_iq8bu")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpddm"]
+atlas = ExtResource("2_iq8bu")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h66l5"]
+atlas = ExtResource("2_iq8bu")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6va8"]
+atlas = ExtResource("2_iq8bu")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0y5re"]
+atlas = ExtResource("2_iq8bu")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ay1ia"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sfvm6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jjsvy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wpddm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h66l5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6va8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0y5re")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 6.0
+}]
+
+[node name="Human" type="Path2D" unique_id=747637483]
+curve = SubResource("Curve2D_default")
+script = ExtResource("1_human_script")
+speed = 100.0
+
+[node name="PathFollow2D" type="PathFollow2D" parent="." unique_id=2069425623]
+loop = false
+
+[node name="HumanArea" type="Area2D" parent="PathFollow2D" unique_id=667875571]
+scale = Vector2(3.0185423, 3.0185423)
+collision_layer = 2
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/HumanArea" unique_id=1309651013]
+shape = SubResource("CircleShape2D_human")
+
+[node name="HumanSprite" type="AnimatedSprite2D" parent="PathFollow2D/HumanArea" unique_id=1095612228]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ay1ia")
+animation = &"Run"
+frame_progress = 0.8608
+
+[node name="WarningSprite" type="Sprite2D" parent="PathFollow2D/HumanArea" unique_id=1681689416]
+modulate = Color(1, 0.5, 0, 0.7)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_icon")

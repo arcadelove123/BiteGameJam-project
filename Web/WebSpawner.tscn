@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://c8swoyikilgdo"]
 
-[ext_resource type="Script" path="res://Web/WebSpawner.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://wo7c0clp56cl" path="res://Web/WebSpawner.gd" id="1_script"]
 
 [node name="WebSpawner" type="Node2D" unique_id=1580804308]
 script = ExtResource("1_script")
-target_node = NodePath("Target")
 
 [node name="Target" type="Marker2D" parent="." unique_id=1563919259]
 position = Vector2(200, 0)

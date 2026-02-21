@@ -6,6 +6,7 @@ extends Area2D
 @export var ground_web_scene: PackedScene = preload("res://Web/web_on_ground.tscn")
 
 var target_position: Vector2
+var target_node: Node2D
 var is_active: bool = false
 var move_direction: Vector2 = Vector2.ZERO
 
@@ -18,17 +19,12 @@ func _ready():
 	warning_sprite.hide()
 	collision_shape.set_deferred("disabled", true)
 
-func setup(start_pos: Vector2, target_pos: Vector2):
+func setup(start_pos: Vector2, target_pos: Vector2, target: Node2D = null):
 	global_position = start_pos
 	target_position = target_pos
+	target_node = target
 	
-	var diff = target_pos - start_pos
-	if diff.length() > 0:
-		move_direction = diff.normalized()
-	else:
-		move_direction = Vector2.RIGHT
-		
-	look_at(target_pos)
+	_update_aim()
 	
 	if not is_inside_tree():
 		await ready
@@ -59,6 +55,10 @@ func start_warning():
 
 func _physics_process(delta):
 	if is_active:
+		if target_node and is_instance_valid(target_node):
+			target_position = target_node.global_position
+		_update_aim()
+
 		var distance_to_target = global_position.distance_to(target_position)
 		var move_step = speed * delta
 		
@@ -67,6 +67,12 @@ func _physics_process(delta):
 			pop()
 		else:
 			global_position += move_direction * move_step
+
+func _update_aim() -> void:
+	var diff = target_position - global_position
+	if diff.length() > 0:
+		move_direction = diff.normalized()
+		rotation = diff.angle() + deg_to_rad(-90.0)
 
 func pop():
 	if not is_active: return
