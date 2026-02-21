@@ -141,6 +141,12 @@ texture = ExtResource("1_r057v")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_oemjb")
 
+[sub_resource type="Curve2D" id="Curve2D_yrugq"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 70, -162, -114, -221, 114, 221, 195, -110, 0, 0, 0, 0, 300, -146, 0, 0, 0, 0, 107, -4)
+}
+point_count = 4
+
 [node name="TestMap" type="Node2D" unique_id=477279372]
 
 [node name="Background" parent="." unique_id=2018306294 instance=ExtResource("1_yrugq")]
@@ -160,10 +166,17 @@ offset_bottom = 40.0
 [node name="Main-character" parent="." unique_id=1231940662 instance=ExtResource("2_oemjb")]
 position = Vector2(322, 349)
 
-[node name="BirdSpawner" parent="." unique_id=1805191623 node_paths=PackedStringArray("start_node", "target_node") instance=ExtResource("4_0w6td")]
+[node name="BirdSpawner" parent="." unique_id=1805191623 node_paths=PackedStringArray("flight_path") instance=ExtResource("4_0w6td")]
 position = Vector2(217, 561)
-start_node = NodePath("Marker2D2")
-target_node = NodePath("Marker2D")
+flight_path = NodePath("Path2D")
+
+[node name="Path2D" type="Path2D" parent="BirdSpawner" unique_id=733859705]
+position = Vector2(33, -54)
+curve = SubResource("Curve2D_yrugq")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="BirdSpawner/Path2D" unique_id=806272676]
+position = Vector2(70, -162)
+rotation = -1.5057993
 
 [node name="Marker2D" type="Marker2D" parent="BirdSpawner" unique_id=513933497]
 position = Vector2(122, 32)

@@ -74,7 +74,7 @@ texture = ExtResource("2_i7s6n")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground" unique_id=1884084542]
 position = Vector2(977, 734)
-motion_mirroring = Vector2(0, 67)
+motion_mirroring = Vector2(0, 256)
 
 [node name="Parallax2D" type="Parallax2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer2" unique_id=1900818752]
 texture_filter = 1
