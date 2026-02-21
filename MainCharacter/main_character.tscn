@@ -2,12 +2,33 @@
 
 [ext_resource type="Script" uid="uid://cv5cr3lui00n2" path="res://MainCharacter/character_body_2d.gd" id="1_wmkwl"]
 [ext_resource type="Texture2D" uid="uid://dkh5hfjywtf48" path="res://Assets/pink_larvae_crawl_sprite_sheet (2).png" id="2_b1h05"]
+[ext_resource type="Texture2D" uid="uid://6r1l6bdu71eg" path="res://larva_jump_ani_sprite_sheet.png" id="2_ybtbe"]
 [ext_resource type="PackedScene" uid="uid://cd07w0q8y2oki" path="res://MainCharacter/health_system.tscn" id="3_bykjv"]
 [ext_resource type="Texture2D" uid="uid://bdy715qbxaqhi" path="res://larva_roll_sprite_sheet.png" id="3_toywe"]
 [ext_resource type="PackedScene" uid="uid://yktnq7nb23dn" path="res://MainCharacter/game_over.tscn" id="4_yymgt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2q423"]
 size = Vector2(18.476128, 5.542838)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3e6w"]
+atlas = ExtResource("2_ybtbe")
+region = Rect2(36, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jstvh"]
+atlas = ExtResource("2_ybtbe")
+region = Rect2(72, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lwxwq"]
+atlas = ExtResource("2_ybtbe")
+region = Rect2(72, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7skh"]
+atlas = ExtResource("2_ybtbe")
+region = Rect2(0, 36, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gensg"]
+atlas = ExtResource("2_ybtbe")
+region = Rect2(36, 36, 36, 36)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bykjv"]
 atlas = ExtResource("2_b1h05")
@@ -71,6 +92,26 @@ region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8yqgs"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3e6w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jstvh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lwxwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i7skh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gensg")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 12.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bykjv")
@@ -141,6 +182,8 @@ texture_filter = 1
 position = Vector2(0, 4)
 scale = Vector2(0.99692017, 0.98723215)
 sprite_frames = SubResource("SpriteFrames_8yqgs")
+animation = &"Jump"
+frame_progress = 0.5922586
 offset = Vector2(0, -4.051732)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=647003749]

@@ -1,5 +1,7 @@
 extends Path2D
 
+signal interacted
+
 @export var speed: float = 600.0
 @export var retreat_speed: float = 400.0
 @export var warning_duration: float = 1.0
@@ -108,6 +110,7 @@ func pop() -> void:
 func _on_body_entered(body: Node) -> void:
 	if body.is_in_group("player"):
 		if body.is_damage_ignored():
+			interacted.emit()
 			if body.has_method("on_damage_ignored"):
 				body.on_damage_ignored(0)
 			start_retreat()
