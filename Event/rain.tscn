@@ -30,10 +30,10 @@ script = ExtResource("1_medp1")
 modulate = Color(1, 1, 1, 0.5019608)
 self_modulate = Color(1, 1, 1, 0.5019608)
 texture_filter = 1
-offset_left = -156.90842
-offset_top = 28.208248
-offset_right = 335.09158
-offset_bottom = 9363.208
+offset_left = -148.68097
+offset_top = 27.03291
+offset_right = 343.31903
+offset_bottom = 9362.033
 scale = Vector2(0.13146783, 0.0068467357)
 texture = ExtResource("2_ab2h2")
 

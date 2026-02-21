@@ -25,8 +25,9 @@ func _ready() -> void:
 			c.visible = false
 
 func _process(_delta: float) -> void:
-	if is_instance_valid(player):
-		warning.global_position.y = player.global_position.y - 150
+	var camera = get_viewport().get_camera_2d()
+	if camera:
+		warning.global_position.y = camera.get_screen_center_position().y - 120
 func fade(target_alpha: float, duration: float = 1.0):
 	var tween = create_tween()
 	tween.tween_property(warning, "modulate:a", target_alpha, duration)
