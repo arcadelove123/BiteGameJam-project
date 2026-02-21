@@ -5,10 +5,12 @@
 [ext_resource type="Texture2D" uid="uid://dwajys183nc0t" path="res://retry2.png" id="3_nq2ra"]
 [ext_resource type="Texture2D" uid="uid://crc0khx48k6fv" path="res://Scenes/option 2.png" id="4_nq2ra"]
 [ext_resource type="Texture2D" uid="uid://db45l8vkuxws" path="res://Assets/leaf.png" id="4_qul20"]
-[ext_resource type="Texture2D" uid="uid://d2bvlfdu4cm00" path="res://option.png" id="5_mqtkr"]
 [ext_resource type="Script" uid="uid://c20cbydeseg8j" path="res://Scenes/h_slider.gd" id="5_nq2ra"]
 [ext_resource type="Texture2D" uid="uid://clx6trywyhfmr" path="res://mute.png" id="8_lfskl"]
 [ext_resource type="Texture2D" uid="uid://cqnidtvwgwfyr" path="res://full screen.png" id="9_c5yid"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yehv6"]
+load_path = "res://.godot/imported/option.png-f7186c3eaabb8d223f81062551e90854.ctex"
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_uw1bl"]
 color = Color(2.0094587e-06, 0.46288532, 0, 1)
@@ -70,20 +72,20 @@ texture = ExtResource("3_nq2ra")
 self_modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 1000.0
-offset_top = 103.0
+offset_top = 134.0
 offset_right = 1062.0
-offset_bottom = 151.0
-scale = Vector2(2.162374, 1.0139233)
+offset_bottom = 196.0
+scale = Vector2(2.162, 0.5)
 icon_alignment = 1
 expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="Button2" unique_id=709801684]
 layout_mode = 0
-offset_left = -1.3873727
-offset_top = -54.24474
-offset_right = 38.61263
-offset_bottom = -14.24474
-scale = Vector2(1.6675423, 3.5976322)
+offset_left = -79.55597
+offset_top = -324.0
+offset_right = -39.55597
+offset_bottom = -284.0
+scale = Vector2(1.668, 7)
 texture = ExtResource("4_nq2ra")
 
 [node name="Panel" type="Panel" parent="." unique_id=1474285744]
@@ -109,7 +111,7 @@ offset_top = -79.5
 offset_right = 182.0
 offset_bottom = -29.5
 scale = Vector2(4.697753, 4.697753)
-texture = ExtResource("5_mqtkr")
+texture = SubResource("CompressedTexture2D_yehv6")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1587690407]
 layout_mode = 1
